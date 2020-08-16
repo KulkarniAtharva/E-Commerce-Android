@@ -4,21 +4,27 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener
+public class MainActivity extends AppCompatActivity
 {
-    SearchView searchView;
+    Fragment fragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,8 +32,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        searchView = (SearchView)findViewById(R.id.searchView);
-        searchView.setOnQueryTextListener( MainActivity.this);
+
 
         //getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         //getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
@@ -57,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 {
                     case R.id.home:
 
+                                        fragment = new Home();
+                                        switchfragment(fragment);
+
                                     break;
                     case R.id.cart:
 
@@ -67,6 +75,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
                     case R.id.user:
 
+                                        fragment = new User();
+                                        switchfragment(fragment);
+
                                     break;
 
                 }
@@ -75,19 +86,18 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 return false;
             }
         });
+
+        if (savedInstanceState == null)
+        {
+            bottomNavigationView.setSelectedItemId(R.id.home); // change to whichever id should be default
+        }
     }
 
-    @Override
-    public boolean onQueryTextSubmit(String query)
-    {
-        return false;
-    }
 
-    @Override
-    public boolean onQueryTextChange(String newText)
-    {
-        Toast.makeText(this, newText, Toast.LENGTH_SHORT).show();
 
-        return false;
+    void switchfragment(Fragment fragment)
+    {
+        FragmentManager manager = getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.framelayout,fragment).commit();
     }
 }

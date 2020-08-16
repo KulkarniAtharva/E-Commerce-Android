@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin"
+        android:layout_marginTop="50dp"
+        android:text="Welcome Back"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signin_with_your_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeback"
+        android:layout_marginTop="15dp"
+        android:text="Signin with your email and password or continue with social media"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin_with_your_email"
+        android:paddingStart="25dp"
+        android:paddingRight="25dp"
+        android:hint="Email"
+        android:textColorHint="@color/green"
+        app:endIconDrawable="@drawable/email"
+        app:endIconMode="custom"
+        android:layout_marginTop="50dp"
+        android:theme="@style/LoginTextInputLayoutStyle"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_textinputlayout"
+        android:paddingStart="25dp"
+        android:paddingRight="25dp"
+        android:hint="Password"
+        android:textColorHint="@color/green"
+        app:endIconDrawable="@drawable/lock"
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/rememberme_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_textinputlayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/rememberme_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password_textinputlayout"
+        app:layout_constraintLeft_toRightOf="@id/rememberme_checkbox"
+        android:text="Remember me"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/rememberme_textview"
+        app:layout_constraintTop_toBottomOf="@id/password_textinputlayout"
+        android:layout_marginTop="20dp"
+        android:text="@string/forgot_password"
+        android:layout_marginStart="110dp"
+        />
+
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rememberme_textview"
+        android:layout_marginTop="55dp"
+        android:text="Continue"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/continue_background"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continue_button"
+        android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/dont_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textColor="@color/green"
+        android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

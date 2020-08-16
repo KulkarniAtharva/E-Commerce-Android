@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">E-Commerce</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="signup"><u>Sign Up</u></string>
 </resources>

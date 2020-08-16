@@ -4,12 +4,20 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ecommerce_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".search_result">
+
+
+        </activity>
+        <activity android:name=".show_product"/>
+        <activity android:name=".cart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
