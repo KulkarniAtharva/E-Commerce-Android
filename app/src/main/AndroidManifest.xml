@@ -16,7 +16,10 @@
 
 
         </activity>
-        <activity android:name=".show_product"/>
+        <activity android:name=".show_product">
+
+
+        </activity>
         <activity android:name=".cart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
