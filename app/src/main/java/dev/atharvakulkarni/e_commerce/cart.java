@@ -36,10 +36,17 @@ public class cart extends AppCompatActivity
         cart_product_adapter myAdapter = new cart_product_adapter(recyclerView,cart.this,new ArrayList<Integer>(),new ArrayList<String>(),new ArrayList<String>());
         recyclerView.setAdapter(myAdapter);
 
+        ((cart_product_adapter) recyclerView.getAdapter()).update(R.drawable.shoes1,"Asian WNDR-13 Running Shoes for Men(Green, Grey)","₹300.00");
+        ((cart_product_adapter) recyclerView.getAdapter()).update(R.drawable.shoes2,"Asian WNDR-13 Running Shoes for Men(Green, Grey)","₹500.00");
+
+
+
+
         linearLayoutManager = new LinearLayoutManager(cart.this);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        ((cart_product_adapter) recyclerView.getAdapter()).update(R.drawable.shoes1,"Asian WNDR-13 Running Shoes for Men(Green, Grey)","₹300.00");
+
+
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
         {

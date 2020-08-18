@@ -57,11 +57,9 @@ public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adap
     {
         holder.title.setText(title.get(position));
         holder.price.setText(price.get(position));
-       // holder.image.setImageResource(R.drawable.shoes1);
+        holder.image.setImageResource(image.get(position));
 
-        Glide.with(context)
-                .load(image.get(position))
-                .into(holder.image);
+       // Glide.with(context).load(image.get(position)).into(holder.image);
 
         //Toast.makeText(context, title.get(position), Toast.LENGTH_SHORT).show();
     }
@@ -83,7 +81,7 @@ public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adap
 
             title = itemView.findViewById(R.id.title);
             price = itemView.findViewById(R.id.price);
-            image = itemView.findViewById(R.id.imageview);
+            image = itemView.findViewById(R.id.image);
 
             itemView.setOnClickListener(new View.OnClickListener()
             {

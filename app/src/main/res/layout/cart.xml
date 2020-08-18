@@ -67,7 +67,17 @@
         app:layout_constraintTop_toBottomOf="@id/seekbar"
         android:text="Sum up of your order"
         android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sum_up_of_your_order"
+        android:layout_marginTop="10dp"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
@@ -76,12 +86,145 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sum_up_of_your_order"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price (2 items)"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹800.00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout2"
+        android:paddingStart="15dp"
+        android:paddingEnd="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free"
+            android:textColor="#FF3D4B"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout3"
+        android:paddingStart="15dp"
+        android:paddingEnd="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F9F9F9"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginEnd="50dp">
+
+            <EditText
+                android:id="@+id/coupun_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter voucher code"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply coupon"
+                android:background="#00B75F"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="40dp"
+                android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout4"
+        android:text="-OR-"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/or"
+        android:background="@drawable/linear_dotted_background"
+        android:layout_margin="40dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 points corresponding to 24 will be given"
+            android:layout_marginEnd="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeem"
+            android:textColor="#FF3D4B"
+            android:textStyle="bold"/>
 
 
-
-
-
+    </LinearLayout>
 
     <Button
         android:id="@+id/continue_button"
