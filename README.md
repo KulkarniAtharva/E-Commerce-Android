@@ -6,3 +6,4 @@
 - Livedata
 - Viewmodel
 - MVVM Architecture
+- Glide
