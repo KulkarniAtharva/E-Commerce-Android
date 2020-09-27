@@ -6,7 +6,8 @@ Built With
   - Viewmodel
   - MVVM Architecture
   - Glide
-- Google Maps & a article on it
+  - Displaying exact reason for order return
+  - Google Maps & a article on it
 - Project report
 - App architecture diagram
 - Screenshots
