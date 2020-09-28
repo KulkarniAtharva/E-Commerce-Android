@@ -1,6 +1,6 @@
 # E-Commerce Android App
 
-Built With
+Built With 🛠
   - Viewbinding
   - Livedata
   - Viewmodel
@@ -12,3 +12,6 @@ Built With
 - App architecture diagram
 - Screenshots
 - Poster
+
+- More Projects   Some of my best projects till date :
+- Licence
