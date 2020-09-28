@@ -64,5 +64,15 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
 
 
 
- More Projects   Some of my best projects till date :
+ ### More Projects   
+ 
+ Some of my best projects till date :
+ 
+ - [Messenger]()
+ - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)
+ - [Weather App]()
+ - [PokeDex]()
+ 
+ <BR>
+  
  Licence
