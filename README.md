@@ -93,6 +93,7 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  - [Book App]()   - Flutter
  - [Doctor Booking]()   - Flutter
  - [Media Player Controller]()  -  Python-OpenCV 
+ - [Cartoonify Image]()  - Python-OpenCV
  
  <BR><BR>
  
