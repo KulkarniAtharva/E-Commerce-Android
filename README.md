@@ -11,10 +11,14 @@ Built With 🛠
 - Project report
 - Poster
 
+<BR><BR>
+
 ## 📸 Screenshots
 
 
-
+<BR><BR>
+  
+  
 ## Built With 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more..
@@ -31,6 +35,9 @@ Built With 🛠
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
 
+<BR><BR>
+  
+  
 # Package Structure
     
     dev.atharvakulkarni.moviefinder    # Root Package
@@ -51,10 +58,15 @@ Built With 🛠
     └── utils               # Utility Classes / Kotlin extensions
     
     
+<BR><BR>
+  
+    
 ## Architecture
 This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
 
 ![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
+
+<BR><BR>
 
 ### Contact - Let's become friend
 - [Portfolio Website](https://kulkarniatharva.github.io/)
@@ -63,18 +75,21 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
 - [Facebook](https://www.facebook.com/atharva.kulkarni.96343/)
 
 
+<BR><BR>
 
  ### More Projects   
  
  Some of my best projects till date :
  
- - [Messenger]()                                                                     
- - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)        
- - [Weather App]()
- - [PokeDex]()
- - [Media Player Controller]()
- - [Meditation & Yoga]()
- - [Book App]()
- - [Doctor Booking]()
+ - [Messenger]()  - Flutter                                                             
+ - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)      - Android
+ - [Weather App]()    - Android
+ - [PokeDex]()  - Flutter
+ - [Meditation & Yoga]()  - Flutter
+ - [Book App]()   - Flutter
+ - [Doctor Booking]()   - Flutter
+ - [Media Player Controller]()  -  Python-OpenCV 
+ 
+ <BR><BR>
  
  ### Licence
