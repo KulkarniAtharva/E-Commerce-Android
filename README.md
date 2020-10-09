@@ -97,6 +97,10 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  - [Media Player Controller]()  -  Python-OpenCV 
  - [Cartoonify Image]()  - Python-OpenCV
  
+ <BR>
+ 
+ An overview of my skills & all my projects done can be found from my [Portfolio Website](https://kulkarniatharva.github.io/).
+ 
  <BR><BR>
  
  ## Licence
