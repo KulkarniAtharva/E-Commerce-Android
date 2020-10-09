@@ -14,6 +14,7 @@ Built With 🛠
   
 [Project Report]()
 
+This App is linked to an e-commerce website via a REST API created developed by me.  Github repo link is ![here]()
 <BR><BR>
 
 ## 📸 Screenshots
