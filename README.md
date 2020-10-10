@@ -8,15 +8,23 @@ Built With 🛠
   - Glide
   - Displaying exact reason for order return
   - Google Maps & a article on it
-- Project report
 - Poster
+
+<BR> 
+  
+[Project Report]()
+
+This App is linked to my e-commerce website via a REST API created by me.  Github repo link is [here]()
+<BR><BR>
 
 ## 📸 Screenshots
 
 
-
+<BR><BR>
+  
+  
 ## Built With 🛠
-- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Java](https://www.java.com/en/) - Most widely used programming language for Android development.
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more..
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
   - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Data objects that notify views when the underlying database changes.
@@ -31,9 +39,12 @@ Built With 🛠
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
 
+<BR><BR>
+  
+  
 # Package Structure
     
-    dev.atharvakulkarni.moviefinder    # Root Package
+    dev.atharvakulkarni.e_commerce   # Root Package
     .
     ├── data                # For data handling.
     │   ├── model           # Model classes
@@ -51,26 +62,45 @@ Built With 🛠
     └── utils               # Utility Classes / Kotlin extensions
     
     
+<BR><BR>
+  
+    
 ## Architecture
 This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
 
 ![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
-### Contact - Let's become friend
+<BR><BR>
+
+## Contact - Let's become friend
 - [Portfolio Website](https://kulkarniatharva.github.io/)
 - [Github](https://github.com/KulkarniAtharva)
 - [LinkedIn](https://www.linkedin.com/in/atharva-kulkarni-146279187/)
 - [Facebook](https://www.facebook.com/atharva.kulkarni.96343/)
 
 
+<BR><BR>
 
- ### More Projects   
+ ## More Projects   
  
- Some of my best projects till date :
+ I don't stop here.  <BR>
+ Some of my best projects you must see :
  
- - [Messenger]()
- - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)
- - [Weather App]()
- - [PokeDex]()
+ - [E Commerce Website & Android App]()  - Android   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (currently viewing)
+ - [Messenger Mobile App & Web App]()  - Flutter                                                             
+ - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)      - Android
+ - [Weather App]()    - Android
+ - [PokeDex]()  - Flutter
+ - [Meditation & Yoga]()  - Flutter
+ - [Book App]()   - Flutter
+ - [Doctor Booking]()   - Flutter
+ - [Media Player Controller]()  -  Python-OpenCV 
+ - [Cartoonify Image]()  - Python-OpenCV
  
- ### Licence
+ <BR>
+ 
+ An overview of my skills & all my projects done can be found from my [Portfolio Website](https://kulkarniatharva.github.io/).
+ 
+ <BR><BR>
+ 
+ ## Licence
