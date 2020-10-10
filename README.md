@@ -7,6 +7,8 @@
 &nbsp;
 # Part 2 - Android App
 
+This App is linked to my e-commerce website via a REST API created by me; which is the part 1 of the project. Github repo link is [here]()
+
 Built With 🛠 
   - Viewbinding
   - Livedata
@@ -21,7 +23,7 @@ Built With 🛠
   
 [Project Report]()
 
-This App is linked to my e-commerce website via a REST API created by me.  Github repo link is [here]()
+
 <BR><BR>
 
 ## 📸 Screenshots
