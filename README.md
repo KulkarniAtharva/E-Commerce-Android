@@ -24,7 +24,7 @@ This App is linked to my e-commerce website via a REST API created by me.  Githu
   
   
 ## Built With 🛠
-- [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Java](https://www.java.com/en/) - Most widely used programming language for Android development.
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more..
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
   - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Data objects that notify views when the underlying database changes.
@@ -44,7 +44,7 @@ This App is linked to my e-commerce website via a REST API created by me.  Githu
   
 # Package Structure
     
-    dev.atharvakulkarni.moviefinder    # Root Package
+    dev.atharvakulkarni.e_commerce   # Root Package
     .
     ├── data                # For data handling.
     │   ├── model           # Model classes
