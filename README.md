@@ -1,4 +1,11 @@
-# E-Commerce Android App
+# E-Commerce 
+&nbsp; 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+# Part 2 - Android App
 
 Built With 🛠 
   - Viewbinding
