@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -45,7 +46,11 @@ public class cart extends AppCompatActivity
         linearLayoutManager = new LinearLayoutManager(cart.this);
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        seekBar.setProgress(10);
 
+
+        sliderListener sldListener = new sliderListener();
+        seekBar.setOnSeekBarChangeListener(sldListener);
 
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
@@ -74,5 +79,21 @@ public class cart extends AppCompatActivity
 
             }
         });
+    }
+
+    private class sliderListener implements SeekBar.OnSeekBarChangeListener {
+        private int smoothnessFactor = 10;
+        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            progress = Math.round(progress / smoothnessFactor);
+            TextView lblProgress = (TextView) findViewById(R.id.seekbar);
+            lblProgress.setText(String.valueOf(progress));
+        }
+
+        public void onStartTrackingTouch(SeekBar seekBar) {
+        }
+
+        public void onStopTrackingTouch(SeekBar seekBar) {
+            seekBar.setProgress(Math.round((seekBar.getProgress() + (smoothnessFactor / 2)) / smoothnessFactor) * smoothnessFactor);
+        }
     }
 }

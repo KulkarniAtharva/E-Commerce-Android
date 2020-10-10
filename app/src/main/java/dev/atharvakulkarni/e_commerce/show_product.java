@@ -11,7 +11,7 @@ public class show_product extends AppCompatActivity
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cart_eachproduct);
+        setContentView(R.layout.show_product);
 
 
     }
