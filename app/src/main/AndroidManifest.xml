@@ -16,21 +16,21 @@
 
 
 
+
         </activity>
         <activity android:name=".show_product">
 
 
         </activity>
         <activity android:name=".cart">
-
-        </activity>
-
-        <activity android:name=".sigin_signup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".sigin_signup">
         </activity>
     </application>
 

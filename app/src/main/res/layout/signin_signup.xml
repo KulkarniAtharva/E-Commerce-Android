@@ -225,7 +225,7 @@
             android:paddingRight="25dp"
             android:hint="Your Name"
             android:textColorHint="@color/green"
-            app:endIconDrawable="@drawable/email"
+            app:endIconDrawable="@drawable/person_outline"
             app:endIconMode="custom"
             android:layout_marginTop="50dp"
             android:theme="@style/LoginTextInputLayoutStyle"

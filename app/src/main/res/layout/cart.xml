@@ -6,65 +6,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
-        android:id="@+id/linearlayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/title"
         android:layout_marginTop="15dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cart"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Payment"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
-
-    </LinearLayout>
-
-    <SeekBar
-        android:id="@+id/seekbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout1"
-        android:layout_marginTop="15dp"
-        android:outlineSpotShadowColor="@color/green"/>
 
     <TextView
         android:id="@+id/sum_up_of_your_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/seekbar"
         android:text="Sum up of your order"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -73,27 +39,18 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sum_up_of_your_order"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_marginTop="10dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sum_up_of_your_order"
         android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:id="@id/linearlayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recyclerview"
         android:paddingTop="15dp"
         android:paddingStart="15dp"
         android:paddingEnd="15dp">
@@ -121,8 +78,6 @@
         android:id="@+id/linearlayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout2"
         android:paddingStart="15dp"
         android:paddingEnd="25dp">
 
@@ -149,8 +104,6 @@
         android:id="@+id/linearlayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout3"
         android:paddingStart="15dp"
         android:paddingEnd="25dp"
         android:orientation="horizontal">
@@ -191,18 +144,12 @@
         android:id="@+id/or"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout4"
         android:text="-OR-"
         android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/or"
         android:background="@drawable/linear_dotted_background"
         android:layout_margin="40dp"
         android:padding="20dp">
@@ -231,13 +178,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/continue2_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="20dp"
         android:text="Continue"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

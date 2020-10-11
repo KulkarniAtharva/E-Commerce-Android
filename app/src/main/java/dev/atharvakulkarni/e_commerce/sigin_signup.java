@@ -1,5 +1,6 @@
 package dev.atharvakulkarni.e_commerce;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,8 +35,8 @@ public class sigin_signup extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                signin_page.setVisibility(View.GONE);
-                signup_page.setVisibility(View.VISIBLE);
+                Intent intent = new Intent(sigin_signup.this,MainActivity.class);
+                startActivity(intent);
             }
         });
 
