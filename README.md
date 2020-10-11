@@ -1,4 +1,14 @@
-# E-Commerce Android App
+# E-Commerce 
+&nbsp; 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+# Part 2 - Android App
+
+This App is linked to my e-commerce website via a REST API created by me; which is the part 1 of the project. <BR>
+Github repo link to part 1 is [here]().
 
 Built With 🛠 
   - Viewbinding
@@ -14,7 +24,7 @@ Built With 🛠
   
 [Project Report]()
 
-This App is linked to my e-commerce website via a REST API created by me.  Github repo link is [here]()
+
 <BR><BR>
 
 ## 📸 Screenshots
@@ -86,8 +96,8 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  I don't stop here.  <BR>
  Some of my best projects you must see :
  
- - [E Commerce Website & Android App]()  - Android   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (currently viewing)
- - [Messenger Mobile App & Web App]()  - Flutter                                                             
+ - [E Commerce - Website & Android App]()  - Android   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (currently viewing)
+ - [Messenger - Mobile App & Web App]()  - Flutter                                                             
  - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)      - Android
  - [Weather App]()    - Android
  - [PokeDex]()  - Flutter
