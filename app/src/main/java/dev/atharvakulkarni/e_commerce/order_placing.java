@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,8 +17,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class order_placing extends AppCompatActivity
 {
     SeekBar seekBar;
-    Button deliver_here;
-    LinearLayout address,order_summary;
+    Button deliver_here,continue_button;
+    ScrollView address,order_summary;
+    LinearLayout payment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -29,8 +31,10 @@ public class order_placing extends AppCompatActivity
 
         seekBar = (SeekBar)findViewById(R.id.seekbar);
         deliver_here = findViewById(R.id.deliver_here);
+        continue_button = findViewById(R.id.continue_button);
         address  = findViewById(R.id.address);
         order_summary = findViewById(R.id.order_summary);
+        payment = findViewById(R.id.payment);
 
         seekBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.green2,getTheme()), PorterDuff.Mode.SRC_ATOP);
         seekBar.getThumb().setColorFilter(getResources().getColor(R.color.green2,getTheme()), PorterDuff.Mode.SRC_ATOP);
@@ -44,6 +48,18 @@ public class order_placing extends AppCompatActivity
             {
                 address.setVisibility(View.GONE);
                 order_summary.setVisibility(View.VISIBLE);
+
+                seekBar.setProgress(48);
+            }
+        });
+
+        continue_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                order_summary.setVisibility(View.GONE);
+                payment.setVisibility(View.VISIBLE);
 
                 seekBar.setProgress(48);
             }

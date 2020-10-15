@@ -57,16 +57,21 @@
         android:layout_marginTop="15dp"
         android:outlineSpotShadowColor="@color/green" />
 
-    <LinearLayout
+    <ScrollView
         android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekbar"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -156,6 +161,7 @@
         </LinearLayout>
 
             <Button
+                android:id="@+id/edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Edit"
@@ -175,20 +181,26 @@
         android:text="DELIVER HERE"
         android:textColor="@color/white"
         android:textAllCaps="false"
-        android:textSize="16dp"
-        />
-    </LinearLayout>
+        android:textSize="16dp" />
 
-    <LinearLayout
+    </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
         android:id="@+id/order_summary"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekbar"
-        android:layout_marginTop="90dp"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -336,14 +348,17 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/continue_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CONTINUE"/>
 
     </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -351,10 +366,14 @@
         app:layout_constraintTop_toBottomOf="@id/seekbar"
         android:layout_marginTop="12dp"
         android:visibility="visible"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fillViewport="true">
 
     <LinearLayout
-        android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -477,13 +496,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Union Bank of India"
-                android:textColor="@color/black"
-                android:textSize="16dp"
-                android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Union Bank of India"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_weight="1"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -751,4 +770,43 @@
 
     </LinearLayout>
     </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹74,990"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View price details"
+                    android:textColor="@color/green2"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/continue_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
