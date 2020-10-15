@@ -23,14 +23,18 @@
 
         </activity>
         <activity android:name=".cart">
+        </activity>
+
+        <activity android:name=".sigin_signup">
+        </activity>
+
+        <activity android:name=".order_placing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
-        <activity android:name=".sigin_signup">
         </activity>
     </application>
 

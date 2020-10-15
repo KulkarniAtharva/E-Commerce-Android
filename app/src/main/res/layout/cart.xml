@@ -173,16 +173,17 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/continue_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/continue2_background"
-        android:layout_marginBottom="20dp"
-        android:text="Continue"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:textSize="16dp"/>
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/continue2_background"
+            android:layout_marginBottom="20dp"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp"/>
+
 
     </LinearLayout>
 
