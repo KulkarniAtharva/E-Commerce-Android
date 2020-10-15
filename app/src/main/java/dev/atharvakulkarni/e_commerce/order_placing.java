@@ -18,8 +18,7 @@ public class order_placing extends AppCompatActivity
 {
     SeekBar seekBar;
     Button deliver_here,continue_button;
-    ScrollView address,order_summary;
-    LinearLayout payment;
+    LinearLayout address,order_summary,payment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)

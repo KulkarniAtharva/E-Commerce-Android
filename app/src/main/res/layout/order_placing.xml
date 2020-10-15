@@ -57,16 +57,22 @@
         android:layout_marginTop="15dp"
         android:outlineSpotShadowColor="@color/green" />
 
-    <ScrollView
+    <LinearLayout
         android:id="@+id/address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekbar"
-        android:layout_marginTop="12dp"
-        android:visibility="gone"
-        android:fillViewport="true">
+        android:layout_marginTop="90dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_weight="1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -172,30 +178,38 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/deliver_here"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/continue2_background"
-        android:layout_marginBottom="20dp"
-        android:text="DELIVER HERE"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:textSize="16dp" />
+
 
     </LinearLayout>
     </ScrollView>
-
-    <ScrollView
+        <Button
+            android:id="@+id/deliver_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/continue2_background"
+            android:layout_marginBottom="20dp"
+            android:text="DELIVER HERE"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+    </LinearLayout>
+        
+    <LinearLayout
         android:id="@+id/order_summary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekbar"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="90dp"
         android:visibility="gone"
-        android:fillViewport="true">
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_weight="1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -319,43 +333,46 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:padding="10dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="₹74,990"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="22dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View price details"
-                android:textColor="@color/green2"/>
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/continue_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CONTINUE"/>
-
-    </LinearLayout>
     </LinearLayout>
     </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹74,990"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View price details"
+                    android:textColor="@color/green2" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/continue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE" />
+
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/payment"
@@ -365,7 +382,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekbar"
         android:layout_marginTop="12dp"
-        android:visibility="visible"
+        android:visibility="gone"
         android:orientation="vertical">
 
     <ScrollView
@@ -377,7 +394,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="100dp">
+        android:paddingBottom="10dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -774,9 +791,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:paddingBottom="100dp">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
