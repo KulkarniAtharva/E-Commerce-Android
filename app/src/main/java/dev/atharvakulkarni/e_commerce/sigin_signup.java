@@ -13,7 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 public class sigin_signup extends AppCompatActivity
 {
     ConstraintLayout signin_page,signup_page;
-    Button continue_btn;
+    Button continue_btn, signup_button;
     TextView signin,signup;
 
     @Override
@@ -25,12 +25,23 @@ public class sigin_signup extends AppCompatActivity
         signin_page = findViewById(R.id.signin_page);
         signup_page = findViewById(R.id.signup_page);
         continue_btn = findViewById(R.id.continue_button);
+        signup_button = findViewById(R.id.signup_button);
         signin = findViewById(R.id.signin);
         signup = findViewById(R.id.signup);
 
         getWindow().setStatusBarColor(getResources().getColor(R.color.white,getTheme()));
 
         continue_btn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(sigin_signup.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        signup_button.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)

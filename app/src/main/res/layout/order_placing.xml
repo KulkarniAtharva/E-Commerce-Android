@@ -333,7 +333,6 @@
 
     </LinearLayout>
 
-
     </LinearLayout>
     </ScrollView>
 
@@ -374,7 +373,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -388,13 +387,16 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="10dp">
+        android:paddingBottom="150dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -787,11 +789,17 @@
 
     </LinearLayout>
     </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
+            android:id="@+id/linearlayout2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:background="@color/white">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -821,7 +829,5 @@
                 android:text="CONTINUE"/>
 
         </LinearLayout>
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

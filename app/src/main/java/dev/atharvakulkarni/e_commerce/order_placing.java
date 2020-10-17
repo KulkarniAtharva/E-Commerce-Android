@@ -13,12 +13,14 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class order_placing extends AppCompatActivity
 {
     SeekBar seekBar;
     Button deliver_here,continue_button;
-    LinearLayout address,order_summary,payment;
+    LinearLayout address,order_summary,linearLayout2;
+    ConstraintLayout payment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -33,6 +35,7 @@ public class order_placing extends AppCompatActivity
         continue_button = findViewById(R.id.continue_button);
         address  = findViewById(R.id.address);
         order_summary = findViewById(R.id.order_summary);
+        linearLayout2 = findViewById(R.id.linearlayout2);
         payment = findViewById(R.id.payment);
 
         seekBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.green2,getTheme()), PorterDuff.Mode.SRC_ATOP);
@@ -59,8 +62,9 @@ public class order_placing extends AppCompatActivity
             {
                 order_summary.setVisibility(View.GONE);
                 payment.setVisibility(View.VISIBLE);
+                linearLayout2.setVisibility(View.VISIBLE);
 
-                seekBar.setProgress(48);
+                seekBar.setProgress(88);
             }
         });
 

@@ -170,7 +170,6 @@
             android:textColor="#FF3D4B"
             android:textStyle="bold"/>
 
-
     </LinearLayout>
 
         <Button
@@ -183,17 +182,6 @@
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:textSize="16dp"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
-
 
     </LinearLayout>
 

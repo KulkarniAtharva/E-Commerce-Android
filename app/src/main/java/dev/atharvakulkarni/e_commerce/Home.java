@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,12 +17,17 @@ import androidx.fragment.app.Fragment;
 public class Home extends Fragment
 {
     SearchView searchView;
+    ImageView cart;
+    TextView atharva;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.home,container,false);
+
+        cart = view.findViewById(R.id.cart);
+        atharva = view.findViewById(R.id.atharva);
 
         searchView = (SearchView)view.findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
@@ -40,6 +47,28 @@ public class Home extends Fragment
                 return false;
             }
         });
+
+        cart.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getContext(),cart.class);
+                startActivity(intent);
+            }
+        });
+
+        atharva.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getContext(),search_result.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         return view;
     }
