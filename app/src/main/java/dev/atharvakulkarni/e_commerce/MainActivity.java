@@ -69,9 +69,13 @@ public class MainActivity extends AppCompatActivity
                     case R.id.cart:
 
                                     break;
-                    case R.id.wishlist:
+                    case R.id.shopping_bag:
 
                                     break;
+
+                    case R.id.message:
+
+                        break;
 
                     case R.id.user:
 

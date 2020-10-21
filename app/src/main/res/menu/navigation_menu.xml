@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/about"
+            android:title="About"
+             />
+
+        <item
+            android:id="@+id/mark_attendance"
+            android:title="Mark Attendance"
+            />
+        <item
+            android:id="@+id/quiz"
+            android:title="Quiz"
+             />
+
+        <item
+            android:id="@+id/settings"
+            android:title="Settings"
+             />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/report"
+                android:title="Report bugs"
+                 />
+
+            <item
+                android:id="@+id/rate"
+                android:title="Rate Us"
+                 />
+            <item
+                android:id="@+id/share"
+                android:title="Share"
+                />
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                 />
+
+        </menu>
+    </item>
+
+</menu>

@@ -11,21 +11,27 @@
 
     <item
         android:id="@+id/cart"
-        android:icon="@drawable/home"
+        android:icon="@drawable/cart"
         app:showAsAction="ifRoom"
         android:title="Cart" />
 
     <item
-        android:id="@+id/wishlist"
-        android:icon="@drawable/home"
+        android:id="@+id/shopping_bag"
+        android:icon="@drawable/shopping_bag"
         app:showAsAction="ifRoom"
         android:title="Wishlist" />
+
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/message"
+        app:showAsAction="ifRoom"
+        android:title="Message" />
 
     <item
         android:id="@+id/user"
         android:icon="@drawable/person_outline"
         app:showAsAction="ifRoom"
-        android:title="USer" />
+        android:title="User" />
 
 
 </menu>
