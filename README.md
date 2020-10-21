@@ -49,6 +49,13 @@ Built With 🛠
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
 
+### Other libraries included
+- RecyclerView
+- CardView
+- CircularImageView
+- ImageSlider
+
+
 <BR><BR>
   
   
