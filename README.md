@@ -15,9 +15,7 @@
   
 # Part 2 - Android App
 
-This App is linked to my e-commerce website via a REST API developed; which is the part 1 of the project. <BR>
-Github repo link to part 1 is [here]().
-   
+This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>   
 
 <div class="row">
   <div class="column">
