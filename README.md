@@ -18,8 +18,21 @@
 This App is linked to my e-commerce website via a REST API developed; which is the part 1 of the project. <BR>
 Github repo link to part 1 is [here]().
    
+
+<div class="row">
+  <div class="column" style="margin-left:10px">
+    <img src="https://4.bp.blogspot.com/-NnAkV5vpYuw/XNMYF4RtLvI/AAAAAAAAI70/kdgLm3cnTO4FB4rUC0v9smscN3zHJPlLgCLcBGAs/s1600/Jetpack_logo%2B%25282%2529.png" alt="Adobe XD" width="100px">
+  </div>
    
-<img src="https://lh3.googleusercontent.com/proxy/7y9N_n1yCnF9j2VFpsZfY_MU5qmrwskg8ZPTG9KHPgbmnuvtO5O-DKakB0HvhjptEf1egP_93LExk4iwE82Oqal7x8Dr6WCS-GcV8hvknvrfZGOJ_Ls3GA9Zg3YN_O29Kf1mEQBbN1sqNTw" alt="Adobe XD" width="200px">
+  <div class="column" style="margin-left:10px">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Adobe XD" width="80px">
+  </div>
+  <div class="column" style="margin-left:100px">
+    <img src="https://lh3.googleusercontent.com/proxy/7y9N_n1yCnF9j2VFpsZfY_MU5qmrwskg8ZPTG9KHPgbmnuvtO5O-DKakB0HvhjptEf1egP_93LExk4iwE82Oqal7x8Dr6WCS-GcV8hvknvrfZGOJ_Ls3GA9Zg3YN_O29Kf1mEQBbN1sqNTw" alt="Adobe XD" width="100px">
+  </div>
+</div>
+
+
 
 Built With 🛠 
   - MVVM Architecture
