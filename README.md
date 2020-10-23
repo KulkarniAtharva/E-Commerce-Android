@@ -136,6 +136,32 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  - [Cartoonify Image]()  - Python-OpenCV
  
  <BR>
+   
+   
+   
+ 
+<table style="width:100%">
+  <tr>
+    <th>Android</th>
+    <th>Flutter</th> 
+    <th>Web</th>
+    <th>Machine Learning</th> 
+  </tr>
+  <tr>
+    <td>Messenger</td>
+    <td>Messenger</td> 
+    <td>E-Commerce</td>
+    <td>Emotion & Gesture Recognition</td>
+  </tr>    
+  <tr>
+    <td>Movie Finder</td>
+    <td>PokeDex</td>
+    <td>Messenger</td>
+    <td>Cartoonify Image</td>
+  </tr>  
+</table>
+     
+     
  
  An overview of my skills & all my projects done can be found from my [Portfolio Website](https://kulkarniatharva.github.io/).
  
