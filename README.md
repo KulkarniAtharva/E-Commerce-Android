@@ -158,6 +158,24 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>PokeDex</td>
     <td>Messenger</td>
     <td>Cartoonify Image</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Meditation & Yoga</td>
+    <td>Messenger</td>
+    <td>Cartoonify Image</td>
+  </tr>  
+  <tr>
+    <td>Movie Finder</td>
+    <td>Book App</td>
+    <td>Messenger</td>
+    <td>Cartoonify Image</td>
+  </tr>  
+  <tr>
+    <td>Movie Finder</td>
+    <td>Doctor Booking</td>
+    <td>Messenger</td>
+    <td>Cartoonify Image</td>
   </tr>  
 </table>
      
