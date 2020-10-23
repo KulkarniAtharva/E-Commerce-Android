@@ -27,6 +27,7 @@ Github repo link to part 1 is [here]().
   <div class="column">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Adobe XD" width="80px">
   </div>
+  
   <div class="column">
     <img src="https://lh3.googleusercontent.com/proxy/7y9N_n1yCnF9j2VFpsZfY_MU5qmrwskg8ZPTG9KHPgbmnuvtO5O-DKakB0HvhjptEf1egP_93LExk4iwE82Oqal7x8Dr6WCS-GcV8hvknvrfZGOJ_Ls3GA9Zg3YN_O29Kf1mEQBbN1sqNTw" alt="Adobe XD" width="100px">
   </div>
