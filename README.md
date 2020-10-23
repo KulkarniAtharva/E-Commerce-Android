@@ -24,7 +24,7 @@ Github repo link to part 1 is [here]().
     <img src="https://4.bp.blogspot.com/-NnAkV5vpYuw/XNMYF4RtLvI/AAAAAAAAI70/kdgLm3cnTO4FB4rUC0v9smscN3zHJPlLgCLcBGAs/s1600/Jetpack_logo%2B%25282%2529.png" alt="Adobe XD" width="100px">
   </div>
    
-  <div class="column" style="margin-left:10px">
+  <div class="column">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Adobe XD" width="80px">
   </div>
   <div class="column" style="margin-left:100px">
