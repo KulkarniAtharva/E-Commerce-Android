@@ -5,6 +5,14 @@
 &nbsp;
 &nbsp;
 &nbsp;
+
+
+<B>Part 1 - [E-Commerce Website]()    <BR>
+   Part 3 - [Flutter Mobile App]()     <BR><BR><BR>
+      <BR><BR><BR>
+</B>
+  
+  
 # Part 2 - Android App
 
 This App is linked to my e-commerce website via a REST API developed; which is the part 1 of the project. <BR>
