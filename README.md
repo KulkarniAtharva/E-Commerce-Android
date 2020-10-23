@@ -17,13 +17,12 @@
 
 This App is linked to my e-commerce website via a REST API developed; which is the part 1 of the project. <BR>
 Github repo link to part 1 is [here]().
+   
+   
+<img src="https://miro.medium.com/max/2800/1*1xragDxpymZFkaTPlgghmQ.png" alt="Adobe XD" width="300px">
 
 Built With 🛠 
-  - Viewbinding
-  - Livedata
-  - Viewmodel
   - MVVM Architecture
-  - Glide
   - Displaying exact reason for order return
   - Google Maps & a article on it
 - Poster
