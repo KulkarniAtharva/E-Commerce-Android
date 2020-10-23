@@ -177,9 +177,10 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Finding Waldo</td>
   </tr>  
   <tr>
-    
+    <td></td>
     <td>Doctor Booking</td>
-   
+    <td></td>
+    <td></td>
     
   </tr>   
 </table>
