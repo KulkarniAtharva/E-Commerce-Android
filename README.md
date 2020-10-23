@@ -160,22 +160,22 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Cartoonify Image</td>
   </tr>
   <tr>
-    <td></td>
+    <td>Weather App</td>
     <td>Meditation & Yoga</td>
-    <td>Messenger</td>
-    <td>Cartoonify Image</td>
+    <td>Portfolio (new)</td>
+    <td>Photo Recognition</td>
   </tr>  
   <tr>
-    <td>Movie Finder</td>
+    <td>KKW Alerts</td>
     <td>Book App</td>
-    <td>Messenger</td>
-    <td>Cartoonify Image</td>
+    <td>Portfolio (old)</td>
+    <td>Live Sketch using Webcam</td>
   </tr>  
   <tr>
     <td>Movie Finder</td>
     <td>Doctor Booking</td>
-    <td>Messenger</td>
-    <td>Cartoonify Image</td>
+    <td>Photography</td>
+    <td>Finding Waldo</td>
   </tr>  
 </table>
      
