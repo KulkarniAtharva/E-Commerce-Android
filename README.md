@@ -175,6 +175,12 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Photography</td>
     <td>Finding Waldo</td>
   </tr>  
+  <tr>
+    <td>E-Commerce</td>
+    <td>E-Commerce</td>
+    <td></td>
+    <td></td>
+  </tr>  
 </table>
      
      
