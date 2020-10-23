@@ -19,7 +19,7 @@ This App is linked to my e-commerce website via a REST API developed; which is t
 Github repo link to part 1 is [here]().
    
    
-<img src="https://miro.medium.com/max/2800/1*1xragDxpymZFkaTPlgghmQ.png" alt="Adobe XD" width="300px">
+<img src="https://lh3.googleusercontent.com/proxy/7y9N_n1yCnF9j2VFpsZfY_MU5qmrwskg8ZPTG9KHPgbmnuvtO5O-DKakB0HvhjptEf1egP_93LExk4iwE82Oqal7x8Dr6WCS-GcV8hvknvrfZGOJ_Ls3GA9Zg3YN_O29Kf1mEQBbN1sqNTw" alt="Adobe XD" width="200px">
 
 Built With 🛠 
   - MVVM Architecture
