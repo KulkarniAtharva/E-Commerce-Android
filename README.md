@@ -35,8 +35,6 @@ Github repo link to part 1 is [here]().
 
 
 
-Built With 🛠 
-  - MVVM Architecture
   - Displaying exact reason for order return
   - Google Maps & a article on it
 - Poster
