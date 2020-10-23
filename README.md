@@ -146,41 +146,42 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <th>Machine Learning</th> 
   </tr>
   <tr>
-    <td>Messenger</td>
-    <td>Messenger</td> 
+    <td>E-Commerce</td>
+    <td>E-Commerce</td>
     <td>E-Commerce</td>
     <td>Emotion & Gesture Recognition</td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td>Messenger</td>
+    <td>Messenger</td> 
+    <td>Messenger</td>
+    <td>Photo Recognition</td>
   </tr>    
   <tr>
     <td>Movie Finder</td>
     <td>PokeDex</td>
-    <td>Messenger</td>
+    <td>Portfolio (new)</td>
     <td>Cartoonify Image</td>
   </tr>
   <tr>
     <td>Weather App</td>
     <td>Meditation & Yoga</td>
-    <td>Portfolio (new)</td>
-    <td>Photo Recognition</td>
-  </tr>  
-  <tr>
-    <td>KKW Alerts</td>
-    <td>Book App</td>
     <td>Portfolio (old)</td>
     <td>Live Sketch using Webcam</td>
   </tr>  
   <tr>
-    <td>Movie Finder</td>
-    <td>Doctor Booking</td>
+    <td>KKW Alerts</td>
+    <td>Book App</td>
     <td>Photography</td>
     <td>Finding Waldo</td>
   </tr>  
   <tr>
-    <td>E-Commerce</td>
-    <td>E-Commerce</td>
-    <td></td>
-    <td></td>
-  </tr>  
+    
+    <td>Doctor Booking</td>
+   
+    
+  </tr>   
 </table>
      
      
