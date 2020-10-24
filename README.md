@@ -1,21 +1,38 @@
-# E-Commerce 
+# <div align="center">E-Commerce</div>
 &nbsp; 
 &nbsp;
 &nbsp;
 &nbsp;
+&nbsp; 
 &nbsp;
-&nbsp;
+
+
+<B>Part 1 - [E-Commerce Website]()    <BR>
+   Part 3 - [E-Commerce - Flutter Mobile App]()     <BR><BR><BR>
+      <BR><BR>
+</B>
+  
+  
 # Part 2 - Android App
 
-This App is linked to my e-commerce website via a REST API created by me; which is the part 1 of the project. <BR>
-Github repo link to part 1 is [here]().
+This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>   
 
-Built With 🛠 
-  - Viewbinding
-  - Livedata
-  - Viewmodel
-  - MVVM Architecture
-  - Glide
+<div class="row">
+  <div class="column">
+    <img src="https://4.bp.blogspot.com/-NnAkV5vpYuw/XNMYF4RtLvI/AAAAAAAAI70/kdgLm3cnTO4FB4rUC0v9smscN3zHJPlLgCLcBGAs/s1600/Jetpack_logo%2B%25282%2529.png" alt="Adobe XD" width="80px">
+  </div>
+   
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Adobe XD" width="40px">
+  </div>
+  
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/7y9N_n1yCnF9j2VFpsZfY_MU5qmrwskg8ZPTG9KHPgbmnuvtO5O-DKakB0HvhjptEf1egP_93LExk4iwE82Oqal7x8Dr6WCS-GcV8hvknvrfZGOJ_Ls3GA9Zg3YN_O29Kf1mEQBbN1sqNTw" alt="Adobe XD" width="80px">
+  </div>
+</div>
+
+
+
   - Displaying exact reason for order return
   - Google Maps & a article on it
 - Poster
@@ -47,6 +64,13 @@ Built With 🛠
 - [OkHttp3](https://github.com/square/okhttp) -  For implementing interceptor, logging and mocking web server.
 - [Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android focused on smooth scrolling.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
+
+
+### Other libraries included
+- RecyclerView
+- CardView
+- CircularImageView
+- ImageSlider
 
 
 <BR><BR>
@@ -108,6 +132,58 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  - [Cartoonify Image]()  - Python-OpenCV
  
  <BR>
+   
+   
+   
+ 
+<table style="width:100%">
+  <tr>
+    <th>Android</th>
+    <th>Flutter</th> 
+    <th>Web</th>
+    <th>Machine Learning</th> 
+  </tr>
+  <tr>
+    <td>E-Commerce</td>
+    <td>E-Commerce</td>
+    <td>E-Commerce</td>
+    <td>Emotion & Gesture Recognition</td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td>Messenger</td>
+    <td>Messenger</td> 
+    <td>Messenger</td>
+    <td>Photo Recognition</td>
+  </tr>    
+  <tr>
+    <td>Movie Finder</td>
+    <td>PokeDex</td>
+    <td>Portfolio (new)</td>
+    <td>Cartoonify Image</td>
+  </tr>
+  <tr>
+    <td>Weather App</td>
+    <td>Meditation & Yoga</td>
+    <td>Portfolio (old)</td>
+    <td>Live Sketch using Webcam</td>
+  </tr>  
+  <tr>
+    <td>KKW Alerts</td>
+    <td>Book App</td>
+    <td>Photography</td>
+    <td>Finding Waldo</td>
+  </tr>  
+  <tr>
+    <td></td>
+    <td>Doctor Booking</td>
+    <td></td>
+    <td>Handwritten Digit Recognition</td>
+    
+  </tr>   
+</table>
+     
+     
  
  An overview of my skills & all my projects done can be found from my [Portfolio Website](https://kulkarniatharva.github.io/).
  
