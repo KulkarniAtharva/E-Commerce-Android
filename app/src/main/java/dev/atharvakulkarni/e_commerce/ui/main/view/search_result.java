@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.view;
 
 import android.os.Bundle;
 import android.widget.GridView;
@@ -7,6 +7,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+
+import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.ui.main.adapter.PojoGrid;
+import dev.atharvakulkarni.e_commerce.ui.main.adapter.search_result_adapter;
 
 public class search_result extends AppCompatActivity
 {

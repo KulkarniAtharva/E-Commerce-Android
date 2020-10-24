@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import com.smarteist.autoimageslider.SliderViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.SliderItem;
 
 public class slider_adapter extends SliderViewAdapter<slider_adapter.SliderAdapterVH>
 {

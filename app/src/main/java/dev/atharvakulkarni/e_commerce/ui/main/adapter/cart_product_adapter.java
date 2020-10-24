@@ -1,7 +1,6 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,12 +9,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
+
+import dev.atharvakulkarni.e_commerce.R;
 
 public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adapter.ViewHolder>
 {

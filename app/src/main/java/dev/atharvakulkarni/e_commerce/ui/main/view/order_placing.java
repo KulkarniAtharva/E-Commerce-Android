@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.view;
 
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -14,9 +14,14 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.DataBindingUtil;
+
+import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.databinding.OrderPlacingBinding;
 
 public class order_placing extends AppCompatActivity
 {
+    OrderPlacingBinding binding;
     SeekBar seekBar;
     Button deliver_here,continue_button;
     LinearLayout address,order_summary,linearLayout2;
@@ -26,17 +31,18 @@ public class order_placing extends AppCompatActivity
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.order_placing);
+        binding = DataBindingUtil.setContentView(this, R.layout.order_placing);
 
         getWindow().setStatusBarColor(getResources().getColor(R.color.white,getTheme()));
 
-        seekBar = (SeekBar)findViewById(R.id.seekbar);
-        deliver_here = findViewById(R.id.deliver_here);
-        continue_button = findViewById(R.id.continue_button);
-        address  = findViewById(R.id.address);
-        order_summary = findViewById(R.id.order_summary);
-        linearLayout2 = findViewById(R.id.linearlayout2);
-        payment = findViewById(R.id.payment);
+
+        seekBar = binding.seekbar;
+        deliver_here = binding.deliverHere;
+        continue_button = binding.continueButton;
+        address  = binding.address;
+        order_summary = binding.orderSummary;
+        linearLayout2 = binding.linearlayout2;
+        payment = binding.payment;
 
         seekBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.green2,getTheme()), PorterDuff.Mode.SRC_ATOP);
         seekBar.getThumb().setColorFilter(getResources().getColor(R.color.green2,getTheme()), PorterDuff.Mode.SRC_ATOP);

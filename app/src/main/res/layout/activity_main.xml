@@ -8,12 +8,13 @@
     android:id="@+id/drawerlayout"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-    tools:context=".MainActivity">
-<LinearLayout
+    tools:context=".ui.main.view.MainActivity">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:background="@color/white">
 
 
     
@@ -23,20 +24,19 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/bottomNavigationView"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/bottom_navigation_items"
             app:itemBackground="@color/white"
             android:background="?android:attr/windowBackground"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/navigation_view"
@@ -45,9 +45,7 @@
             android:layout_gravity="start"
             app:headerLayout="@layout/navigation_header"
             app:menu="@menu/navigation_menu"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            >
 
                 <TextView
                     android:layout_width="match_parent"

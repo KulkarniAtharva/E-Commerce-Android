@@ -14,6 +14,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    dataBinding
+    {
+         enabled = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -27,7 +32,7 @@ dependencies
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.material:material:1.2.1'
@@ -37,4 +42,23 @@ dependencies
     implementation 'com.github.smarteist:autoimageslider:1.3.9-appcompat'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+
+    // Dagger
+    def dagger_version = "2.26"
+    // def dagger_version = "2.16" // version used by google samples
+
+    // Dagger2 core
+    implementation "com.google.dagger:dagger:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+
+    // Dagger Android
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    // ViewModel and LiveData
+    def lifecycle_version = '2.2.0-alpha03'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 }

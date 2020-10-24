@@ -1,19 +1,19 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.ui.main.view.show_product;
 
 public class search_result_adapter extends BaseAdapter
 {
@@ -64,7 +64,7 @@ public class search_result_adapter extends BaseAdapter
             {
                 Toast.makeText(context, i+"", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(context,show_product.class);
+                Intent intent = new Intent(context, show_product.class);
                 context.startActivity(intent);
             }
         });

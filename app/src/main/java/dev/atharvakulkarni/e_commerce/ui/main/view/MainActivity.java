@@ -1,26 +1,18 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.view;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import dev.atharvakulkarni.e_commerce.R;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -96,8 +88,6 @@ public class MainActivity extends AppCompatActivity
             bottomNavigationView.setSelectedItemId(R.id.home); // change to whichever id should be default
         }
     }
-
-
 
     void switchfragment(Fragment fragment)
     {

@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce;
+package dev.atharvakulkarni.e_commerce.ui.main.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import dev.atharvakulkarni.e_commerce.R;
 
 public class sigin_signup extends AppCompatActivity
 {
@@ -36,7 +38,7 @@ public class sigin_signup extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(sigin_signup.this,MainActivity.class);
+                Intent intent = new Intent(sigin_signup.this, MainActivity.class);
                 startActivity(intent);
             }
         });
