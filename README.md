@@ -7,13 +7,13 @@
 &nbsp;
 
 
-<B>Part 1 - [E-Commerce Website]()    <BR>
+<B>Part 2 - [E-Commerce Website]()    <BR>
    Part 3 - [E-Commerce - Flutter Mobile App]()     <BR><BR><BR>
       <BR><BR>
 </B>
   
   
-# Part 2 - Android App
+# Part 1 - Android App
 
 This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>   
 
