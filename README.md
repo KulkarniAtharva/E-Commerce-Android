@@ -183,8 +183,33 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Doctor Booking</td>
     <td></td>
     <td>Handwritten Digit Recognition</td>
-    
   </tr>   
+  <tr>
+    <td></td>
+    <td>Grocery App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+  <tr>
+    <td></td>
+    <td>News App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+  <tr>
+    <td></td>
+    <td>Wallet App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+  <tr>
+    <td></td>
+    <td>Travel App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+    
+   
 </table>
      
      
