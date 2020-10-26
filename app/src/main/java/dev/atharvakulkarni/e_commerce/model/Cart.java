@@ -1,15 +1,15 @@
-package dev.atharvakulkarni.e_commerce.ui.main.models;
+package dev.atharvakulkarni.e_commerce.model;
 
-public class HomeModel
+public class Cart
 {
     private String cart;
 
-    public HomeModel(String cart)
+    public Cart(String cart)
     {
         this.cart = cart;
     }
 
-    public HomeModel()
+    public Cart()
     {
 
     }

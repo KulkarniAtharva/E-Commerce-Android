@@ -12,24 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main.view.MainActivity">
+        <activity android:name=".view.MainActivity">
 
         </activity>
-        <activity android:name=".ui.main.view.search_result">
+        <activity android:name=".view.search_result">
 
 
-
-
-        </activity>
-        <activity android:name=".ui.main.view.show_product">
 
 
         </activity>
-        <activity android:name=".ui.main.view.cart">
+        <activity android:name=".view.show_product">
+
+
+        </activity>
+        <activity android:name=".view.cart">
 
         </activity>
 
-        <activity android:name=".ui.main.view.sigin_signup">
+        <activity android:name=".view.sigin_signup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.main.view.order_placing">
+        <activity android:name=".view.order_placing">
 
 
         </activity>

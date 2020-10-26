@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.adapter;
+package dev.atharvakulkarni.e_commerce.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import dev.atharvakulkarni.e_commerce.R;
-import dev.atharvakulkarni.e_commerce.ui.main.view.show_product;
+import dev.atharvakulkarni.e_commerce.view.show_product;
 
 public class search_result_adapter extends BaseAdapter
 {

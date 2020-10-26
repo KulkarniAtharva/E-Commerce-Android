@@ -58,7 +58,14 @@ dependencies
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
     annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
 
+    // Retrofit
+    def retrofitVersion = "2.8.1"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
     // ViewModel and LiveData
-    def lifecycle_version = '2.2.0-alpha03'
+    def lifecycle_version = '2.2.0'
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 }

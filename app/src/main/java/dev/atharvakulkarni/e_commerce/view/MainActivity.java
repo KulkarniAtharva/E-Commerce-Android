@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.view;
+package dev.atharvakulkarni.e_commerce.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

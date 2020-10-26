@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.view;
+package dev.atharvakulkarni.e_commerce.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

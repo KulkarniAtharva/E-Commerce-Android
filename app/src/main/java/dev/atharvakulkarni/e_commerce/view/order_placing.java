@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.view;
+package dev.atharvakulkarni.e_commerce.view;
 
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -6,10 +6,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

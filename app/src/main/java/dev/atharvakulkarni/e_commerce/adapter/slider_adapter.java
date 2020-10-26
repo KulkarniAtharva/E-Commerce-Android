@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.adapter;
+package dev.atharvakulkarni.e_commerce.adapter;
 
 import android.content.Context;
 import android.graphics.Color;

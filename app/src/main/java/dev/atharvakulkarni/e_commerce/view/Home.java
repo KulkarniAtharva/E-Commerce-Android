@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.view;
+package dev.atharvakulkarni.e_commerce.view;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,10 +12,9 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.IndicatorView.draw.controller.DrawController;
@@ -27,46 +26,54 @@ import java.util.List;
 
 import dev.atharvakulkarni.e_commerce.R;
 import dev.atharvakulkarni.e_commerce.SliderItem;
-import dev.atharvakulkarni.e_commerce.ui.main.adapter.slider_adapter;
-import dev.atharvakulkarni.e_commerce.ui.main.models.HomeModel;
-import dev.atharvakulkarni.e_commerce.ui.main.viewmodel.HomeViewModel;
+import dev.atharvakulkarni.e_commerce.databinding.HomeBinding;
+import dev.atharvakulkarni.e_commerce.adapter.slider_adapter;
 
 public class Home extends Fragment
 {
-    HomeViewModel mViewModel;
+    //HomeViewModel mViewModel;
     SearchView searchView;
     ImageView cart;
 
     SliderView sliderView;
     private slider_adapter adapter;
-    //HomeBinding homeBinding;
+    HomeBinding homeBinding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-        View view = inflater.inflate(R.layout.home,container,false);
+      // View view = inflater.inflate(R.layout.home,container,false);
 
-        cart = view.findViewById(R.id.cart);
+        homeBinding = DataBindingUtil.inflate(inflater, R.layout.home, container, false);
+        View view = homeBinding.getRoot();
+
+        cart = homeBinding.cart;
+        searchView = homeBinding.searchView;
+        sliderView = homeBinding.imageSlider;
 
        // mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-        mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+      //  mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+
+
+       // mViewModel.init();
 
         /*mViewModel.getUsers().observe(this, users -> {
             // update UI
         });*/
 
-        mViewModel.getUsers().observe(this, new Observer<List<HomeModel>>()
+      /*  mViewModel.getUsers().observe(getContext(), new Observer<VolumesResponse>()
         {
             @Override
-            public void onChanged(@Nullable List<HomeModel> home)
+            public void onChanged(VolumesResponse volumesResponse)
             {
                 // update the ui.
+                if(volumesResponse != null)
+                    adapter.setResults(volumesResponse.getItems());
             }
-        });
+        });*/
 
 
-        searchView = (SearchView)view.findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
         {
             @Override
@@ -93,12 +100,12 @@ public class Home extends Fragment
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getContext(), dev.atharvakulkarni.e_commerce.ui.main.view.cart.class);
-                startActivity(intent);
+             //   Intent intent = new Intent(getContext(), dev.atharvakulkarni.e_commerce.view.cart.class);
+               // startActivity(intent);
             }
         });
 
-        sliderView = view.findViewById(R.id.imageSlider);
+
 
         adapter = new slider_adapter(getContext());
 
@@ -112,14 +119,16 @@ public class Home extends Fragment
         sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
         sliderView.startAutoCycle();
 
-        sliderView.setOnIndicatorClickListener(new DrawController.ClickListener() {
+        sliderView.setOnIndicatorClickListener(new DrawController.ClickListener()
+        {
             @Override
-            public void onIndicatorClicked(int position) {
+            public void onIndicatorClicked(int position)
+            {
                 Log.i("GGG", "onIndicatorClicked: " + sliderView.getCurrentPagePosition());
             }
         });
 
-       addNewItem(view);
+        addNewItem(view);
         renewItems(view);
         removeLastItem(view);
 

@@ -1,4 +1,4 @@
-package dev.atharvakulkarni.e_commerce.ui.main.adapter;
+package dev.atharvakulkarni.e_commerce.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,13 +9,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.databinding.CartItemBinding;
 
-public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adapter.ViewHolder>
+public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
 {
     Context context;
     RecyclerView recyclerView;
@@ -23,7 +25,7 @@ public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adap
     ArrayList<String> title;
     ArrayList<String> price;
 
-    public cart_product_adapter(RecyclerView recyclerView, Context context, ArrayList<Integer> image,ArrayList<String> title,ArrayList<String> price)
+    public CartAdapter(RecyclerView recyclerView, Context context, ArrayList<Integer> image, ArrayList<String> title, ArrayList<String> price)
     {
         this.recyclerView = recyclerView;
         this.context = context;
@@ -32,7 +34,7 @@ public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adap
         this.price = price;
     }
 
-    public void update(Integer images,String titles,String prices)
+   /* public void update(Integer images,String titles,String prices)
     {
        // Toast.makeText(context, titles, Toast.LENGTH_SHORT).show();
         image.add(images);
@@ -40,14 +42,17 @@ public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adap
         price.add(prices);
 
         notifyDataSetChanged();  // refreshes the recycler view automatically
-    }
+    }*/
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
-        View view = LayoutInflater.from(context).inflate(R.layout.cart_eachproduct,parent,false);
-        return new ViewHolder(view);
+        //View view = LayoutInflater.from(context).inflate(R.layout.cart_item,parent,false);
+        //return new ViewHolder(view);
+
+        CartItemBinding cartListItemBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.cart_item, parent, false);
+        return new ViewHolder(cartListItemBinding);
     }
 
     @Override
@@ -72,14 +77,18 @@ public class cart_product_adapter extends RecyclerView.Adapter<cart_product_adap
     {
         TextView title,price;
         ImageView image;
+        private final CartItemBinding binding;
 
-        public ViewHolder(@NonNull View itemView)
+        public ViewHolder(CartItemBinding binding)
         {
-            super(itemView);
+            super(binding.getRoot());
+            View itemView = binding.getRoot();
 
-            title = itemView.findViewById(R.id.title);
-            price = itemView.findViewById(R.id.price);
-            image = itemView.findViewById(R.id.image);
+            this.binding = binding;
+
+            title = binding.title;
+            price = binding.price;
+            image = binding.image;
 
             itemView.setOnClickListener(new View.OnClickListener()
             {
