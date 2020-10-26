@@ -158,7 +158,7 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Messenger</td>
     <td>Messenger</td> 
     <td>Messenger</td>
-    <td>Photo Recognition</td>
+    <td>Face Recognition</td>
   </tr>    
   <tr>
     <td>Movie Finder</td>
