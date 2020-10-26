@@ -7,13 +7,13 @@
 &nbsp;
 
 
-<B>Part 1 - [E-Commerce Website]()    <BR>
+<B>Part 2 - [E-Commerce Website]()    <BR>
    Part 3 - [E-Commerce - Flutter Mobile App]()     <BR><BR><BR>
       <BR><BR>
 </B>
   
   
-# Part 2 - Android App
+# Part 1 - Android App
 
 This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>   
 
@@ -64,6 +64,10 @@ This App is linked to my e-commerce website via web-services using a REST API de
 - [OkHttp3](https://github.com/square/okhttp) -  For implementing interceptor, logging and mocking web server.
 - [Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android focused on smooth scrolling.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
+
+Broadcast receiver
+Shared Preferences
+
 
 
 ### Other libraries included
