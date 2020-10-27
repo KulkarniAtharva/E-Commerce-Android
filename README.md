@@ -27,7 +27,7 @@ This App is linked to my e-commerce website via web-services using a REST API de
   </div>
   
   <div class="column">
-    <img src="https://lh3.googleusercontent.com/proxy/7y9N_n1yCnF9j2VFpsZfY_MU5qmrwskg8ZPTG9KHPgbmnuvtO5O-DKakB0HvhjptEf1egP_93LExk4iwE82Oqal7x8Dr6WCS-GcV8hvknvrfZGOJ_Ls3GA9Zg3YN_O29Kf1mEQBbN1sqNTw" alt="Adobe XD" width="80px">
+    <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="Adobe XD" width="60px">
   </div>
 </div>
 
