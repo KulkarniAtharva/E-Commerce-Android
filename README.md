@@ -65,16 +65,19 @@ This App is linked to my e-commerce website via web-services using a REST API de
 - [Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android focused on smooth scrolling.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
-Broadcast receiver
-Shared Preferences
+Broadcast receiver  <BR>
+Room Persistence Library   <BR>
 
 
 
-### Other libraries included
+### Other Concepts included
 - RecyclerView
+- GridView
 - CardView
 - CircularImageView
 - ImageSlider
+- Fragments
+- Passing data between activities, fragments
 
 
 <BR><BR>
