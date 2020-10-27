@@ -2,23 +2,42 @@
 
     <group android:checkableBehavior="none">
         <item
-            android:id="@+id/about"
-            android:title="About"
+            android:id="@+id/all_categories"
+            android:title="All Categories"
+            />
+        <item
+            android:id="@+id/my_orders"
+            android:title="My Orders"
              />
 
         <item
             android:id="@+id/mark_attendance"
-            android:title="Mark Attendance"
+            android:title="My Cart"
             />
         <item
-            android:id="@+id/quiz"
-            android:title="Quiz"
+            android:id="@+id/my_wishlist"
+            android:title="My Wishlist"
              />
 
         <item
-            android:id="@+id/settings"
-            android:title="Settings"
+            android:id="@+id/my_account"
+            android:title="My Account"
+            />
+
+        <item
+            android:id="@+id/my_notifications"
+            android:title="My Notifications"
              />
+
+        <item
+            android:id="@+id/privacy_policy"
+            android:title="Privacy Policy"
+            />
+
+        <item
+            android:id="@+id/legal"
+            android:title="Legal"
+            />
 
     </group>
 

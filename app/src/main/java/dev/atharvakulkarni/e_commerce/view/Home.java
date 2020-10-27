@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.databinding.DataBindingUtil;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -26,8 +27,10 @@ import java.util.List;
 
 import dev.atharvakulkarni.e_commerce.R;
 import dev.atharvakulkarni.e_commerce.SliderItem;
-import dev.atharvakulkarni.e_commerce.databinding.HomeBinding;
+
 import dev.atharvakulkarni.e_commerce.adapter.slider_adapter;
+import dev.atharvakulkarni.e_commerce.databinding.HomeBinding;
+
 
 public class Home extends Fragment
 {
@@ -38,6 +41,7 @@ public class Home extends Fragment
     SliderView sliderView;
     private slider_adapter adapter;
     HomeBinding homeBinding;
+    DrawerLayout drawerLayout;
 
     @Nullable
     @Override
@@ -52,7 +56,9 @@ public class Home extends Fragment
         searchView = homeBinding.searchView;
         sliderView = homeBinding.imageSlider;
 
-        getActivity().getWindow().setStatusBarColor(getActivity().getColor(R.color.grey));
+
+
+        getActivity().getWindow().setStatusBarColor(getActivity().getColor(R.color.purple));
 
        // mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
       //  mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
