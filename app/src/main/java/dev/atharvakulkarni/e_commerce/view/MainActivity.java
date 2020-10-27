@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -18,13 +20,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.internal.NavigationMenu;
+import com.google.android.material.navigation.NavigationView;
 
 import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.model.AllCategory;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     Fragment fragment = null;
     DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,6 +39,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         drawerLayout = findViewById(R.id.drawerlayout);
+        navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         /*LinearLayout lin_lay_add_paynow = (LinearLayout)findViewById(R.id.home_linear_layout);
 
@@ -111,6 +119,40 @@ public class MainActivity extends AppCompatActivity
         {
             bottomNavigationView.setSelectedItemId(R.id.home); // change to whichever id should be default
         }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
+    {
+        switch (menuItem.getItemId())
+        {
+            case R.id.all_categories:  all_category();   break;
+            case R.id.orders:     break;
+            case R.id.cart:   cart(); break;
+            case R.id.wishlist:     break;
+            case R.id.account:     break;
+            case R.id.notifications:    break;
+            case R.id.privacy_policy:    break;
+            case R.id.legal: break;
+            case R.id.report: break;
+            case R.id.rate: break;
+            case R.id.share: break;
+            case R.id.logout: break;
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    void cart()
+    {
+        Intent intent = new Intent(this,CartActivity.class);
+        startActivity(intent);
+    }
+
+    void all_category()
+    {
+        Intent intent = new Intent(this, AllCategoryActivity.class);
+        startActivity(intent);
     }
 
     void switchfragment(Fragment fragment)

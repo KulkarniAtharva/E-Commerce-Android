@@ -13,15 +13,16 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.model.AllCategory;
 import dev.atharvakulkarni.e_commerce.model.SearchProduct;
 import dev.atharvakulkarni.e_commerce.view.show_product;
 
-public class search_result_adapter extends BaseAdapter
+public class AllCategoryAdapter extends BaseAdapter
 {
     Context context;
-    ArrayList<SearchProduct> gridPojos;
+    ArrayList<AllCategory> gridPojos;
 
-    public search_result_adapter(Context context,ArrayList<SearchProduct> gridPojos)
+    public AllCategoryAdapter(Context context,ArrayList<AllCategory> gridPojos)
     {
         this.context = context;
         this.gridPojos = gridPojos;
@@ -48,15 +49,13 @@ public class search_result_adapter extends BaseAdapter
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup)
     {
-        view = LayoutInflater.from(context).inflate(R.layout.search_result_list,viewGroup,false);
+        view = LayoutInflater.from(context).inflate(R.layout.all_categories_item,viewGroup,false);
 
         TextView title = view.findViewById(R.id.title);
         ImageView image = view.findViewById(R.id.imageview);
-        TextView price = view.findViewById(R.id.price);
 
         title.setText(gridPojos.get(i).getTitle());
         image.setImageResource(gridPojos.get(i).getImages());
-        price.setText(gridPojos.get(i).getPrice());
 
         view.setOnClickListener(new View.OnClickListener()
         {

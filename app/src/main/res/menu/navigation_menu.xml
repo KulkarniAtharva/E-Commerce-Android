@@ -4,30 +4,30 @@
         <item
             android:id="@+id/all_categories"
             android:title="All Categories"
-            />
+            android:icon="@drawable/category"/>
         <item
-            android:id="@+id/my_orders"
+            android:id="@+id/orders"
             android:title="My Orders"
-             />
+            android:icon="@drawable/wishlist"/>
 
         <item
-            android:id="@+id/mark_attendance"
+            android:id="@+id/cart"
             android:title="My Cart"
-            />
+            android:icon="@drawable/cart"/>
         <item
-            android:id="@+id/my_wishlist"
+            android:id="@+id/wishlist"
             android:title="My Wishlist"
-             />
+            android:icon="@drawable/wishlist"/>
 
         <item
-            android:id="@+id/my_account"
+            android:id="@+id/account"
             android:title="My Account"
-            />
+            android:icon="@drawable/person_outline"/>
 
         <item
-            android:id="@+id/my_notifications"
+            android:id="@+id/notifications"
             android:title="My Notifications"
-             />
+            android:icon="@drawable/notifications"/>
 
         <item
             android:id="@+id/privacy_policy"
@@ -46,21 +46,21 @@
             <item
                 android:id="@+id/report"
                 android:title="Report bugs"
-                 />
+                android:icon="@drawable/bug_report"/>
 
             <item
                 android:id="@+id/rate"
                 android:title="Rate Us"
-                 />
+                android:icon="@drawable/rate" />
             <item
                 android:id="@+id/share"
                 android:title="Share"
-                />
+                android:icon="@drawable/share"/>
 
             <item
                 android:id="@+id/logout"
                 android:title="Logout"
-                 />
+                android:icon="@drawable/logout"/>
 
         </menu>
     </item>
