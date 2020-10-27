@@ -158,7 +158,7 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Messenger</td>
     <td>Messenger</td> 
     <td>Messenger</td>
-    <td>Photo Recognition</td>
+    <td>Face Recognition</td>
   </tr>    
   <tr>
     <td>Movie Finder</td>
@@ -181,10 +181,35 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
   <tr>
     <td></td>
     <td>Doctor Booking</td>
-    <td></td>
+    <td>Tic-Tac-Toe</td>
     <td>Handwritten Digit Recognition</td>
-    
   </tr>   
+  <tr>
+    <td></td>
+    <td>Grocery App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+  <tr>
+    <td></td>
+    <td>News App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+  <tr>
+    <td></td>
+    <td>Wallet App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+  <tr>
+    <td></td>
+    <td>Travel App</td>
+    <td></td>
+    <td></td>
+  </tr>   
+    
+   
 </table>
      
      
