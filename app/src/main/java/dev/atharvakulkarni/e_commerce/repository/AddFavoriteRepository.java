@@ -6,6 +6,7 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import dev.atharvakulkarni.e_commerce.model.Favorite;
 import dev.atharvakulkarni.e_commerce.net.RetrofitClient;
 import dev.atharvakulkarni.e_commerce.utils.RequestCallback;
 import okhttp3.ResponseBody;

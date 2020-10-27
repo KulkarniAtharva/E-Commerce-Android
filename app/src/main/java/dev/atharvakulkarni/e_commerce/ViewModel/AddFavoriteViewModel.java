@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import dev.atharvakulkarni.e_commerce.model.Favorite;
 import dev.atharvakulkarni.e_commerce.repository.AddFavoriteRepository;
 import dev.atharvakulkarni.e_commerce.utils.RequestCallback;
 import okhttp3.ResponseBody;
