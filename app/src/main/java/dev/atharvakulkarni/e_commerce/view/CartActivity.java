@@ -20,6 +20,8 @@ import dev.atharvakulkarni.e_commerce.ViewModel.CartViewModel;
 import dev.atharvakulkarni.e_commerce.adapter.CartAdapter;
 import dev.atharvakulkarni.e_commerce.databinding.CartBinding;
 
+import static android.os.Build.PRODUCT;
+
 public class CartActivity extends AppCompatActivity
 {
     CartBinding cartBinding;
@@ -59,6 +61,34 @@ public class CartActivity extends AppCompatActivity
                 Intent intent = new Intent(CartActivity.this, order_placing.class);
                 startActivity(intent);
             }
+        });
+
+
+        cartViewModel.getProductsInCart(LoginUtils.getInstance(this).getUserInfo().getId()).observe(this, cartApiResponse ->
+        {
+            if (cartApiResponse != null)
+            {
+                favoriteList = cartApiResponse.getProductsInCart();
+                if (favoriteList.size() == 0)
+                {
+                    cartBinding.noBookmarks.setVisibility(View.VISIBLE);
+                    cartBinding.emptyCart.setVisibility(View.VISIBLE);
+                }
+                else
+                    cartBinding.productsInCart.setVisibility(View.VISIBLE);
+
+                cartAdapter = new CartAdapter(getApplicationContext(), favoriteList, product ->
+                {
+                    Intent intent = new Intent(CartActivity.this, DetailsActivity.class);
+                    // Pass an object of product class
+                    intent.putExtra(PRODUCT, (product));
+                    startActivity(intent);
+                }, this);
+            }
+
+           // binding.loadingIndicator.setVisibility(View.GONE);
+            cartBinding.productsInCart.setAdapter(cartAdapter);
+            myAdapter.notifyDataSetChanged();
         });
     }
 }

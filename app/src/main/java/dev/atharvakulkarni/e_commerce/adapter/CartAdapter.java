@@ -10,11 +10,17 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.ViewModel.AddFavoriteViewModel;
+import dev.atharvakulkarni.e_commerce.ViewModel.CartViewModel;
+import dev.atharvakulkarni.e_commerce.ViewModel.FromCartViewModel;
+import dev.atharvakulkarni.e_commerce.ViewModel.RemoveFavoriteViewModel;
 import dev.atharvakulkarni.e_commerce.databinding.CartItemBinding;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
@@ -25,6 +31,10 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
     ArrayList<String> title;
     ArrayList<String> price;
 
+    private AddFavoriteViewModel addFavoriteViewModel;
+    private RemoveFavoriteViewModel removeFavoriteViewModel;
+    private FromCartViewModel fromCartViewModel;
+
     public CartAdapter(RecyclerView recyclerView, Context context, ArrayList<Integer> image, ArrayList<String> title, ArrayList<String> price)
     {
         this.recyclerView = recyclerView;
@@ -32,6 +42,10 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
         this.image = image;
         this.title = title;
         this.price = price;
+
+        addFavoriteViewModel = new ViewModelProvider(context).get(AddFavoriteViewModel.class);
+        removeFavoriteViewModel = new ViewModelProvider(context).get(RemoveFavoriteViewModel.class);
+        fromCartViewModel = new ViewModelProvider(context).get(FromCartViewModel.class);
     }
 
    /* public void update(Integer images,String titles,String prices)
@@ -58,9 +72,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position)
     {
-        holder.title.setText(title.get(position));
-        holder.price.setText(price.get(position));
-        holder.image.setImageResource(image.get(position));
+        holder.binding.title.setText(title.get(position));
+        holder.binding.price.setText(price.get(position));
+        holder.binding.image.setImageResource(image.get(position));
 
        // Glide.with(context).load(image.get(position)).into(holder.image);
 
@@ -103,8 +117,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
                     //    context.startActivity(intent);
                 }
             });
-
-
         }
     }
 }

@@ -1,7 +1,12 @@
 package dev.atharvakulkarni.e_commerce.net;
 
 
-interface Api
+import dev.atharvakulkarni.e_commerce.model.CartApiResponse;
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
+public interface Api
 {
     String HTTPS_API_GITHUB_URL = "https://api.github.com/";
 
@@ -10,4 +15,7 @@ interface Api
 
     @GET("/repos/{user}/{reponame}")
     Call<Project> getProjectDetails(@Path("user") String user, @Path("reponame") String projectName);  */
+
+    @GET("carts")
+    Call<CartApiResponse> getProductsInCart(@Query("userId") int userId);
 }

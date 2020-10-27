@@ -15,7 +15,8 @@
         <activity android:name=".view.MainActivity">
 
         </activity>
-        <activity android:name=".view.search_result">
+        <activity android:name=".view.search_result"/>
+        <activity android:name=".view.CartActivity">
 
 
 
@@ -25,9 +26,7 @@
 
 
         </activity>
-        <activity android:name=".view.cart">
 
-        </activity>
 
         <activity android:name=".view.sigin_signup">
             <intent-filter>

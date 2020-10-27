@@ -100,8 +100,8 @@ public class Home extends Fragment
             @Override
             public void onClick(View view)
             {
-             //   Intent intent = new Intent(getContext(), dev.atharvakulkarni.e_commerce.view.cart.class);
-               // startActivity(intent);
+                Intent intent = new Intent(getContext(), CartActivity.class);
+                startActivity(intent);
             }
         });
 
