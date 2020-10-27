@@ -9,29 +9,39 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 
 import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.ViewModel.CartViewModel;
+import dev.atharvakulkarni.e_commerce.ViewModel.SignInSignUpViewModel;
+import dev.atharvakulkarni.e_commerce.databinding.SigninSignupBinding;
 
 public class sigin_signup extends AppCompatActivity
 {
     ConstraintLayout signin_page,signup_page;
     Button continue_btn, signup_button;
     TextView signin,signup;
+    SigninSignupBinding signinSignupBinding;
+    SignInSignUpViewModel signInSignUpViewModel;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin_signup);
+        signinSignupBinding = DataBindingUtil.setContentView(this, R.layout.signin_signup);
 
-        signin_page = findViewById(R.id.signin_page);
-        signup_page = findViewById(R.id.signup_page);
-        continue_btn = findViewById(R.id.continue_button);
-        signup_button = findViewById(R.id.signup_button);
-        signin = findViewById(R.id.signin);
-        signup = findViewById(R.id.signup);
+        signin_page = signinSignupBinding.signinPage;
+        signup_page = signinSignupBinding.signupPage;
+        continue_btn = signinSignupBinding.continueButton;
+        signup_button = signinSignupBinding.signupButton;
+        signin = signinSignupBinding.signin;
+        signup = signinSignupBinding.signup;
 
         getWindow().setStatusBarColor(getResources().getColor(R.color.white,getTheme()));
+
+        signInSignUpViewModel = new ViewModelProvider(this).get(SignInSignUpViewModel.class);
 
         continue_btn.setOnClickListener(new View.OnClickListener()
         {

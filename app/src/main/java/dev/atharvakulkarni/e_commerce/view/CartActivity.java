@@ -81,7 +81,7 @@ public class CartActivity extends AppCompatActivity
         cartAdapter.notifyDataSetChanged();
 
 
-       /* cartViewModel.getProductsInCart(LoginUtils.getInstance(this).getUserInfo()).observe(this, cartApiResponse ->
+       /* cartViewModel.getProductsInCart(LoginUtils.getInstance(this).getUserInfo().getId()).observe(this, cartApiResponse ->
         {
             if (cartApiResponse != null)
             {
@@ -107,6 +107,6 @@ public class CartActivity extends AppCompatActivity
 
            // binding.loadingIndicator.setVisibility(View.GONE);
 
-        });*/
-    }
+        //});*/
+
 }

@@ -52,6 +52,8 @@ public class Home extends Fragment
         searchView = homeBinding.searchView;
         sliderView = homeBinding.imageSlider;
 
+        getActivity().getWindow().setStatusBarColor(getActivity().getColor(R.color.grey));
+
        // mViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
       //  mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 

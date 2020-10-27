@@ -10,13 +10,10 @@
     tools:openDrawer="start"
     tools:context=".view.MainActivity">
 
-
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
-
-
     
         <FrameLayout
             android:id="@+id/framelayout"
@@ -44,8 +41,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             app:headerLayout="@layout/navigation_header"
-            app:menu="@menu/navigation_menu"
-            >
+            app:menu="@menu/navigation_menu">
 
                 <TextView
                     android:layout_width="match_parent"
