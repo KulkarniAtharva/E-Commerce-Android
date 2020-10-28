@@ -22,7 +22,6 @@ import dev.atharvakulkarni.e_commerce.model.SearchProduct;
 public class search_result extends AppCompatActivity
 {
     RecyclerView recyclerView;
-    ArrayList<SearchProduct> list;
     LinearLayoutManager linearLayoutManager;
     search_result_adapter search_result_adapter;
     SearchResultBinding searchResultBinding;
@@ -34,6 +33,8 @@ public class search_result extends AppCompatActivity
         searchResultBinding = DataBindingUtil.setContentView(this, R.layout.search_result);
 
         recyclerView = searchResultBinding.recyclerview;
+
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white,getTheme()));
 
         setUpRecyclerView();
         getProductsInCart();

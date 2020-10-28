@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId())
         {
             case R.id.all_categories:  all_category();   break;
-            case R.id.orders:     break;
+            case R.id.orders:   my_orders();  break;
             case R.id.cart:   cart(); break;
             case R.id.wishlist:     break;
             case R.id.account:     break;
@@ -152,6 +152,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     void all_category()
     {
         Intent intent = new Intent(this, AllCategoryActivity.class);
+        startActivity(intent);
+    }
+
+    void my_orders()
+    {
+        Intent intent = new Intent(this, MyOrdersActivity.class);
         startActivity(intent);
     }
 
