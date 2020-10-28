@@ -5,12 +5,14 @@ import android.widget.GridView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import java.util.ArrayList;
 
 import dev.atharvakulkarni.e_commerce.R;
 import dev.atharvakulkarni.e_commerce.adapter.AllCategoryAdapter;
 import dev.atharvakulkarni.e_commerce.adapter.search_result_adapter;
+import dev.atharvakulkarni.e_commerce.databinding.AllCategoriesBinding;
 import dev.atharvakulkarni.e_commerce.model.AllCategory;
 import dev.atharvakulkarni.e_commerce.model.SearchProduct;
 
@@ -19,14 +21,17 @@ public class AllCategoryActivity extends AppCompatActivity
     GridView gridView;
     ArrayList<AllCategory> list;
     AllCategoryAdapter adapterGrid;
+    AllCategoriesBinding allCategoriesBinding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.all_categories);
+        allCategoriesBinding = DataBindingUtil.setContentView(this, R.layout.all_categories);
 
-        gridView = findViewById(R.id.gridlayout);
+        gridView = allCategoriesBinding.gridlayout;
+
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white,getTheme()));
 
         gridList();
 
@@ -49,8 +54,5 @@ public class AllCategoryActivity extends AppCompatActivity
         list.add(new AllCategory("Furniture",R.drawable.shoes3));
         list.add(new AllCategory("Flights",R.drawable.shoes3));
         list.add(new AllCategory("Gift cards",R.drawable.shoes3));
-
-
-
     }
 }

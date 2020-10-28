@@ -66,9 +66,7 @@
         android:textColorHint="@color/green"
         app:endIconDrawable="@drawable/email"
         app:endIconMode="custom"
-        android:layout_marginTop="50dp"
-        android:theme="@style/LoginTextInputLayoutStyle"
-        app:boxStrokeColor="@color/black">
+        android:layout_marginTop="50dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -229,9 +227,7 @@
             android:textColorHint="@color/green"
             app:endIconDrawable="@drawable/person_outline"
             app:endIconMode="custom"
-            android:layout_marginTop="50dp"
-            android:theme="@style/LoginTextInputLayoutStyle"
-            app:boxStrokeColor="@color/black">
+            android:layout_marginTop="50dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -255,9 +251,7 @@
             android:textColorHint="@color/green"
             app:endIconDrawable="@drawable/email"
             app:endIconMode="custom"
-            android:layout_marginTop="15dp"
-            android:theme="@style/LoginTextInputLayoutStyle"
-            app:boxStrokeColor="@color/black">
+            android:layout_marginTop="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"

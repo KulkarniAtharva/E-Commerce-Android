@@ -29,6 +29,7 @@ import dev.atharvakulkarni.e_commerce.databinding.MyOrdersItemBinding;
 import dev.atharvakulkarni.e_commerce.databinding.SearchResultListBinding;
 import dev.atharvakulkarni.e_commerce.model.Product;
 import dev.atharvakulkarni.e_commerce.model.SearchProduct;
+import dev.atharvakulkarni.e_commerce.view.OrderDetailsActivity;
 import dev.atharvakulkarni.e_commerce.view.show_product;
 
 public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHolder>
@@ -37,7 +38,7 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
     RecyclerView recyclerView;
     ArrayList<Integer> image;
     ArrayList<String> title;
-    ArrayList<String> price;
+    ArrayList<String> order_status;
 
     private List<Product> productsInCart;
 
@@ -52,18 +53,20 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
         void onClick(Product product);
     }
 
-    public MyOrdersAdapter(RecyclerView recyclerView, Context context, ArrayList<Integer> image, ArrayList<String> title)
+    public MyOrdersAdapter(RecyclerView recyclerView, Context context, ArrayList<Integer> image, ArrayList<String>order_status,ArrayList<String> title)
     {
         this.recyclerView = recyclerView;
         this.context = context;
         this.image = image;
         this.title = title;
+        this.order_status = order_status;
     }
 
-    public void update(Integer images,String titles)
+    public void update(Integer images,String order_status,String titles)
     {
         image.add(images);
         title.add(titles);
+        this.order_status.add(order_status);
 
         notifyDataSetChanged();  // refreshes the recycler view automatically
     }
@@ -83,11 +86,8 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position)
     {
         holder.myOrdersItemBinding.title.setText(title.get(position));
+        holder.myOrdersItemBinding.orderStatus.setText(order_status.get(position));
         holder.myOrdersItemBinding.imageview.setImageResource(image.get(position));
-
-        // Glide.with(context).load(image.get(position)).into(holder.image);
-
-        Toast.makeText(context, title.get(position), Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -98,7 +98,7 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder
     {
-        TextView title;
+        TextView title,order_status;
         ImageView image;
         private final MyOrdersItemBinding myOrdersItemBinding;
 
@@ -110,6 +110,7 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
             this.myOrdersItemBinding = myOrdersItemBinding;
 
             title = myOrdersItemBinding.title;
+            order_status = myOrdersItemBinding.orderStatus;
             image = myOrdersItemBinding.imageview;
 
             itemView.setOnClickListener(new View.OnClickListener()
@@ -121,8 +122,8 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
 
                     Toast.makeText(context, position+"", Toast.LENGTH_SHORT).show();
 
-                    // Intent intent = new Intent(context,address.class);
-                    //    context.startActivity(intent);
+                    Intent intent = new Intent(context, OrderDetailsActivity.class);
+                    context.startActivity(intent);
                 }
             });
         }

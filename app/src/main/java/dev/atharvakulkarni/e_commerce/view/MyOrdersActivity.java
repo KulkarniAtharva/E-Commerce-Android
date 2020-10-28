@@ -47,11 +47,11 @@ public class MyOrdersActivity extends AppCompatActivity
 
     private void getProductsInCart()
     {
-        myOrdersAdapter = new MyOrdersAdapter(recyclerView,MyOrdersActivity.this,new ArrayList<Integer>(),new ArrayList<String>());
+        myOrdersAdapter = new MyOrdersAdapter(recyclerView,MyOrdersActivity.this,new ArrayList<Integer>(),new ArrayList<String>(),new ArrayList<String>());
 
 
-        myOrdersAdapter.update(R.drawable.shoes1,"Asian WNDR-13 Running Shoes for Men(Green, Grey)");
-        myOrdersAdapter.update(R.drawable.shoes2,"Asian WNDR-13 Running Shoes for Men(Green, Grey)");
+        myOrdersAdapter.update(R.drawable.shoes1,"Refund Accepted","Asian WNDR-13 Running Shoes for Men(Green, Grey)");
+        myOrdersAdapter.update(R.drawable.shoes2,"Delivered on Oct 30,2019","Asian WNDR-13 Running Shoes for Men(Green, Grey)");
 
         recyclerView.setAdapter(myOrdersAdapter);
         myOrdersAdapter.notifyDataSetChanged();

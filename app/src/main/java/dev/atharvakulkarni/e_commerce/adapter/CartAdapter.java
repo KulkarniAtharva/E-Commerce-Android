@@ -59,7 +59,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
         this.title = title;
         this.price = price;
 
-        Toast.makeText(context, "fdfds", Toast.LENGTH_SHORT).show();
 
         addFavoriteViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(AddFavoriteViewModel.class);
         removeFavoriteViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(RemoveFavoriteViewModel.class);
@@ -78,7 +77,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
 
     public void update(Integer images,String titles,String prices)
     {
-       // Toast.makeText(context, titles, Toast.LENGTH_SHORT).show();
         image.add(images);
         title.add(titles);
         price.add(prices);
@@ -103,10 +101,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>
         holder.binding.title.setText(title.get(position));
         holder.binding.price.setText(price.get(position));
         holder.binding.image.setImageResource(image.get(position));
-
-       // Glide.with(context).load(image.get(position)).into(holder.image);
-
-        Toast.makeText(context, title.get(position), Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -40,20 +40,21 @@
                         android:id="@+id/order_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text=""/>
 
                     <TextView
                         android:id="@+id/title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
                         android:textColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="5dp"/>
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:src="@drawable/arrow_right"
                     android:layout_weight="1"/>

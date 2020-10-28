@@ -42,6 +42,7 @@
         </activity>
         <activity android:name=".view.AllCategoryActivity"/>
         <activity android:name=".view.MyOrdersActivity"/>
+        <activity android:name=".view.OrderDetailsActivity"/>
 
     </application>
 
