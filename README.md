@@ -48,6 +48,10 @@ This App is linked to my e-commerce website via web-services using a REST API de
 
   
 <BR><BR>
+   
+## Features
+
+<BR><BR>
   
   
 ## Built With 🛠
