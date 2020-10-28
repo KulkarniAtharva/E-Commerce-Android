@@ -10,66 +10,140 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import dev.atharvakulkarni.e_commerce.R;
+import dev.atharvakulkarni.e_commerce.ViewModel.AddFavoriteViewModel;
+import dev.atharvakulkarni.e_commerce.ViewModel.FromCartViewModel;
+import dev.atharvakulkarni.e_commerce.ViewModel.RemoveFavoriteViewModel;
+import dev.atharvakulkarni.e_commerce.databinding.CartItemBinding;
+import dev.atharvakulkarni.e_commerce.databinding.SearchResultListBinding;
+import dev.atharvakulkarni.e_commerce.model.Product;
 import dev.atharvakulkarni.e_commerce.model.SearchProduct;
 import dev.atharvakulkarni.e_commerce.view.show_product;
 
-public class search_result_adapter extends BaseAdapter
+public class search_result_adapter extends RecyclerView.Adapter<search_result_adapter.ViewHolder>
 {
     Context context;
-    ArrayList<SearchProduct> gridPojos;
+    RecyclerView recyclerView;
+    ArrayList<Integer> image;
+    ArrayList<String> title;
+    ArrayList<String> price;
 
-    public search_result_adapter(Context context,ArrayList<SearchProduct> gridPojos)
+    private List<Product> productsInCart;
+
+    private CartAdapter.CartAdapterOnClickHandler clickHandler;
+
+
+    /**
+     * The interface that receives onClick messages.
+     */
+    public interface CartAdapterOnClickHandler
+    {
+        void onClick(Product product);
+    }
+
+    public search_result_adapter(RecyclerView recyclerView, Context context, ArrayList<Integer> image, ArrayList<String> title, ArrayList<String> price)
+    {
+        this.recyclerView = recyclerView;
+        this.context = context;
+        this.image = image;
+        this.title = title;
+        this.price = price;
+
+        Toast.makeText(context, "fdfds", Toast.LENGTH_SHORT).show();
+
+      /*  addFavoriteViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(AddFavoriteViewModel.class);
+        removeFavoriteViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(RemoveFavoriteViewModel.class);
+        fromCartViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(FromCartViewModel.class);*/
+    }
+
+    /*public CartAdapter(Context mContext, List<Product> productInCart, CartAdapter.CartAdapterOnClickHandler clickHandler, FragmentActivity activity)
     {
         this.context = context;
-        this.gridPojos = gridPojos;
+        this.productsInCart = productInCart;
+        this.clickHandler = clickHandler;
+        addFavoriteViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(AddFavoriteViewModel.class);
+        removeFavoriteViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(RemoveFavoriteViewModel.class);
+        fromCartViewModel = new ViewModelProvider((ViewModelStoreOwner) context).get(FromCartViewModel.class);
+    }*/
+
+    public void update(Integer images,String titles,String prices)
+    {
+        // Toast.makeText(context, titles, Toast.LENGTH_SHORT).show();
+        image.add(images);
+        title.add(titles);
+        price.add(prices);
+
+        notifyDataSetChanged();  // refreshes the recycler view automatically
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    {
+        //View view = LayoutInflater.from(context).inflate(R.layout.cart_item,parent,false);
+        //return new ViewHolder(view);
+
+        SearchResultListBinding searchResultListBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.search_result_list, parent, false);
+        return new ViewHolder(searchResultListBinding);
     }
 
     @Override
-    public int getCount()
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position)
     {
-        return gridPojos.size();
+        holder.searchResultListBinding.title.setText(title.get(position));
+        holder.searchResultListBinding.price.setText(price.get(position));
+        holder.searchResultListBinding.imageview.setImageResource(image.get(position));
+
+        // Glide.with(context).load(image.get(position)).into(holder.image);
+
+        Toast.makeText(context, title.get(position), Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public Object getItem(int i)
+    public int getItemCount()
     {
-        return null;
+        return title.size();
     }
 
-    @Override
-    public long getItemId(int i)
+    public class ViewHolder extends RecyclerView.ViewHolder
     {
-        return 0;
-    }
+        TextView title,price;
+        ImageView image;
+        private final SearchResultListBinding searchResultListBinding;
 
-    @Override
-    public View getView(final int i, View view, ViewGroup viewGroup)
-    {
-        view = LayoutInflater.from(context).inflate(R.layout.search_result_list,viewGroup,false);
-
-        TextView title = view.findViewById(R.id.title);
-        ImageView image = view.findViewById(R.id.imageview);
-        TextView price = view.findViewById(R.id.price);
-
-        title.setText(gridPojos.get(i).getTitle());
-        image.setImageResource(gridPojos.get(i).getImages());
-        price.setText(gridPojos.get(i).getPrice());
-
-        view.setOnClickListener(new View.OnClickListener()
+        public ViewHolder(SearchResultListBinding searchResultListBinding)
         {
-            @Override
-            public void onClick(View view)
+            super(searchResultListBinding.getRoot());
+            View itemView = searchResultListBinding.getRoot();
+
+            this.searchResultListBinding = searchResultListBinding;
+
+            title = searchResultListBinding.title;
+            price = searchResultListBinding.price;
+            image = searchResultListBinding.imageview;
+
+            itemView.setOnClickListener(new View.OnClickListener()
             {
-                Toast.makeText(context, i+"", Toast.LENGTH_SHORT).show();
+                @Override
+                public void onClick(View view)
+                {
+                    int position = recyclerView.getChildLayoutPosition(view);
 
-                Intent intent = new Intent(context, show_product.class);
-                context.startActivity(intent);
-            }
-        });
+                    Toast.makeText(context, position+"", Toast.LENGTH_SHORT).show();
 
-        return view;
+                    // Intent intent = new Intent(context,address.class);
+                    //    context.startActivity(intent);
+                }
+            });
+        }
     }
 }
