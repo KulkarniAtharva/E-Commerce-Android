@@ -78,7 +78,8 @@ Room Persistence Library   <BR>
 - ImageSlider
 - Fragments
 - Passing data between activities, fragments
-
+- SearchView
+- SwipeRefresh
 
 <BR><BR>
   
