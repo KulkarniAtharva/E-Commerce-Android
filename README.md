@@ -84,6 +84,7 @@ Room Persistence Library   <BR>
 - Passing data between activities, fragments
 - SearchView
 - SwipeRefresh
+- BottomSheet
 
 <BR><BR>
   
