@@ -192,7 +192,13 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Doctor Booking</td>
     <td>Tic-Tac-Toe</td>
     <td>Handwritten Digit Recognition</td>
-  </tr>   
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dating App</td>
+    <td>Dating App</td>
+    <td></td>
+  </tr>
   <tr>
     <td></td>
     <td>Grocery App</td>
