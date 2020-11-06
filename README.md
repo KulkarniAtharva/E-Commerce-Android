@@ -133,6 +133,8 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  I don't stop here.  <BR>
  Some of my best projects you must see :
  
+ <!--
+ 
  - [E Commerce - Website & Android App]()  - Android   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (currently viewing)
  - [Messenger - Mobile App & Web App]()  - Flutter                                                             
  - [Movie Finder](https://github.com/KulkarniAtharva/Movie_Finder-Android)      - Android
@@ -143,6 +145,9 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  - [Doctor Booking]()   - Flutter
  - [Media Player Controller]()  -  Python-OpenCV 
  - [Cartoonify Image]()  - Python-OpenCV
+ 
+ 
+ -->
  
  <BR>
    
