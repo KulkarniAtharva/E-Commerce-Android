@@ -1,4 +1,4 @@
-# <div align="center">E-Commerce</div>
+# <div align="center">🛒 E-Commerce 🛍</div>
 &nbsp; 
 &nbsp;
 &nbsp;
@@ -131,7 +131,7 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  ## 😎 More Projects   
  
  I don't stop here.  <BR>
- Some of my best projects you must see :
+ Some of my best projects you must see :  👇👇👇👇👇👇
  
  <!--
  
@@ -274,4 +274,4 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  
  <BR><BR>
  
- ## Licence
+ ## 📜 Licence
