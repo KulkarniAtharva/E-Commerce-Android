@@ -119,7 +119,7 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
 
 <BR><BR>
 
-## Contact - Let's become friend
+## 📱 Contact - Let's become friend  🤝
 - [Portfolio Website](https://kulkarniatharva.github.io/)
 - [Github](https://github.com/KulkarniAtharva)
 - [LinkedIn](https://www.linkedin.com/in/atharva-kulkarni-146279187/)
