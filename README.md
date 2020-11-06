@@ -112,7 +112,7 @@ Room Persistence Library   <BR>
 <BR><BR>
   
     
-## Architecture
+## 👨‍🔧 Architecture
 This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
 
 ![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
@@ -128,7 +128,7 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
 
 <BR><BR>
 
- ## More Projects   
+ ## 😎 More Projects   
  
  I don't stop here.  <BR>
  Some of my best projects you must see :
