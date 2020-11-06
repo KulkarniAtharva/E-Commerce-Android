@@ -225,37 +225,37 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
   </tr>   
   <tr>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr> 
-  <tr>
-    <td></td>
-    <td></td>
+    <td>a</td>
     <td></td>
     <td></td>
   </tr> 
   <tr>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr> 
-  <tr>
-    <td></td>
-    <td></td>
+    <td>a</td>
     <td></td>
     <td></td>
   </tr> 
   <tr>
     <td></td>
-    <td></td>
+    <td>a</td>
     <td></td>
     <td></td>
   </tr> 
   <tr>
     <td></td>
+    <td>a</td>
     <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>a</td>
+    <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>s</td>
     <td></td>
     <td></td>
   </tr> 
