@@ -48,14 +48,36 @@ This App is linked to my e-commerce website via web-services using a REST API de
 
 <table>
   <tr>
-    <th>Assignment</th>
-    <th>Assignments</th>
+    <th>Adress</th>
+    <th>Cart</th>
     <th>Date picker</th>
   </tr>
   <tr>
     <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/address.jpg" width="250px"></td>
-    <td><img src="https://user-images.githubusercontent.com/47221267/99143843-cbb45b80-2686-11eb-9133-addb8f7048a2.jpg" width="250px"></td>
-    <td><img src="https://user-images.githubusercontent.com/47221267/99143880-1a61f580-2687-11eb-9e5c-a09e4f5b671d.jpg" width="250px"></td>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/cart.jpg" width="250px"></td>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/home.jpg" width="250px"></td>
+  </tr>
+ 
+ <tr>
+    <th>Navigation Drawer</th>
+    <th>Order Summary</th>
+    <th>Payment</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/navigation%20drawer.jpg" width="250px"></td>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/order%20summary.jpg" width="250px"></td>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/payment.jpg" width="250px"></td>
+  </tr>
+  
+  <tr>
+    <th>Payment 2</th>
+    <th>Sign In</th>
+    <th>Sign Up</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/payment2.jpg" width="250px"></td>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/signin.jpg" width="250px"></td>
+    <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/signup.jpg" width="250px"></td>
   </tr>
 </table>
 
