@@ -50,7 +50,7 @@ This App is linked to my e-commerce website via web-services using a REST API de
   <tr>
     <th>Adress</th>
     <th>Cart</th>
-    <th>Date picker</th>
+    <th>Home</th>
   </tr>
   <tr>
     <td><img src="https://github.com/KulkarniAtharva/E-Commerce-Android/blob/master/Screenshots/address.jpg" width="250px"></td>
