@@ -1,11 +1,11 @@
-# <div align="center">E-Commerce</div>
+# <div align="center">🛒 E-Commerce 🛍</div>
 &nbsp; 
 &nbsp;
 &nbsp;
-&nbsp;
 &nbsp; 
-&nbsp;
-
+&nbsp; 
+&nbsp; 
+ 
 
 <B>Part 2 - [E-Commerce Website]()    <BR>
    Part 3 - [E-Commerce - Flutter Mobile App]()     <BR><BR><BR>
@@ -45,6 +45,19 @@ This App is linked to my e-commerce website via web-services using a REST API de
 <BR><BR>
 
 ## 📸 Screenshots
+
+<table>
+  <tr>
+    <th>Assignment</th>
+    <th>Assignments</th>
+    <th>Date picker</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/47221267/99143611-de2d9580-2684-11eb-8f1e-ca7c1c3d89b5.jpg" width="250px"></td>
+    <td><img src="https://user-images.githubusercontent.com/47221267/99143843-cbb45b80-2686-11eb-9133-addb8f7048a2.jpg" width="250px"></td>
+    <td><img src="https://user-images.githubusercontent.com/47221267/99143880-1a61f580-2687-11eb-9e5c-a09e4f5b671d.jpg" width="250px"></td>
+  </tr>
+</table>
 
   
 <BR><BR>
@@ -112,14 +125,14 @@ Room Persistence Library   <BR>
 <BR><BR>
   
     
-## Architecture
+## 👨‍🔧 Architecture
 This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
 
 ![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
 <BR><BR>
 
-## Contact - Let's become friend
+## 📱 Contact - Let's become friend  🤝
 - [Portfolio Website](https://kulkarniatharva.github.io/)
 - [Github](https://github.com/KulkarniAtharva)
 - [LinkedIn](https://www.linkedin.com/in/atharva-kulkarni-146279187/)
@@ -128,10 +141,12 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
 
 <BR><BR>
 
- ## More Projects   
+ ## 😎 More Projects   
  
  I don't stop here.  <BR>
- Some of my best projects you must see :
+ Some of my best projects you must see :  👇👇👇👇👇👇
+ 
+ <!--
  
  - [E Commerce - Website & Android App]()  - Android   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (currently viewing)
  - [Messenger - Mobile App & Web App]()  - Flutter                                                             
@@ -143,6 +158,9 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  - [Doctor Booking]()   - Flutter
  - [Media Player Controller]()  -  Python-OpenCV 
  - [Cartoonify Image]()  - Python-OpenCV
+ 
+ 
+ -->
  
  <BR>
    
@@ -192,7 +210,13 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td>Doctor Booking</td>
     <td>Tic-Tac-Toe</td>
     <td>Handwritten Digit Recognition</td>
-  </tr>   
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dating App</td>
+    <td>Dating App</td>
+    <td></td>
+  </tr>
   <tr>
     <td></td>
     <td>Grocery App</td>
@@ -217,6 +241,42 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
     <td></td>
     <td></td>
   </tr>   
+  <tr>
+    <td></td>
+    <td>a</td>
+    <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>a</td>
+    <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>a</td>
+    <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>a</td>
+    <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>a</td>
+    <td></td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td></td>
+    <td>s</td>
+    <td></td>
+    <td></td>
+  </tr> 
     
    
 </table>
@@ -227,4 +287,4 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
  
  <BR><BR>
  
- ## Licence
+ ## 📜 Licence
