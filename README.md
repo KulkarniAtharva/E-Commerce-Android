@@ -46,6 +46,19 @@ This App is linked to my e-commerce website via web-services using a REST API de
 
 ## 📸 Screenshots
 
+<table>
+  <tr>
+    <th>Assignment</th>
+    <th>Assignments</th>
+    <th>Date picker</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/47221267/99143611-de2d9580-2684-11eb-8f1e-ca7c1c3d89b5.jpg" width="250px"></td>
+    <td><img src="https://user-images.githubusercontent.com/47221267/99143843-cbb45b80-2686-11eb-9133-addb8f7048a2.jpg" width="250px"></td>
+    <td><img src="https://user-images.githubusercontent.com/47221267/99143880-1a61f580-2687-11eb-9e5c-a09e4f5b671d.jpg" width="250px"></td>
+  </tr>
+</table>
+
   
 <BR><BR>
    
