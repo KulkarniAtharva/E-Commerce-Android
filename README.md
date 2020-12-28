@@ -15,7 +15,8 @@
   
 # Part 1 - Android App
 
-This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>   
+This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>
+The Website, Android App, Flutter App & Flutter Web App are connected to each other <BR>
 
 <div class="row">
   <div class="column">
