@@ -1,21 +1,14 @@
-# <div align="center">🛒 E-Commerce 🛍</div>
-&nbsp; 
-&nbsp;
-&nbsp;
-&nbsp; 
-&nbsp; 
-&nbsp; 
- 
+# <div align="center">🛒 E-Commerce </div>
 
-<B>
-   Part 1 - [Android App]()      <BR>
-   Part 2 - [E-Commerce Website]()    <BR>
-   Part 3 - [E-Commerce - Flutter Mobile App]()     <BR><BR><BR>
-      <BR><BR>
+<B>Part 1 - [Android App]()   - currently viewing <BR>
+   Part 2 - [Flutter Mobile App]()     <BR>
+   Part 3 - [Web App using MERN Stack Technology]()      <BR>
+   Part 4 - [Desktop Application using JavaFX, MySQL & JDBC]()   <BR>
+     <BR><BR><BR>
+   <H3> <div align="center">Part 3 - Android App</div>       </H3>   <BR><BR><BR>
 </B>
-  
-  
-# Part 1 - Android App
+ 
+ 
 
 This App is linked to my e-commerce website via web-services using a REST API developed; which are the other parts of this project. <BR>
 The Website, Android App, Flutter App & Flutter Web App are connected to each other <BR>
