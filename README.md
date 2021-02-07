@@ -1,6 +1,6 @@
 # <div align="center">🛒 E-Commerce 🛍</div>
 
-<BR><BR><BR>
+<BR><BR><BR> 
 
 <B>Part 1 - [Android App]()   - currently viewing <BR>
    Part 2 - [Flutter Mobile App]()     <BR>
