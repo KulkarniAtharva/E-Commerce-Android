@@ -3,7 +3,7 @@
 <BR><BR><BR> 
 
 <B>Part 1 - [Android App]()   - currently viewing <BR>
-   Part 2 - [Flutter Mobile App]()     <BR>
+   Part 2 - [Flutter Mobile App]()     <BR> 
    Part 3 - [Web App using MERN Stack Technology]()      <BR>
    Part 4 - [Desktop Application using JavaFX, MySQL & JDBC]()   <BR>
      <BR><BR><BR>
